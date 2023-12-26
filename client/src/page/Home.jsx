@@ -274,7 +274,7 @@ const Home = () => {
                 <div className="item i6 title">
                     <div className="item__inner">
                         <h3>site<em>coding</em></h3>
-                        <p className="desc2">
+                        <p className="desc">
                             웹 표준을 준수하며 복잡한 레이아웃과 반응형 디자인을 다루고, 패럴랙스 스크롤링을 활용하여 웹 개발에서의 다양한 경험을 쌓아왔습니다.
                         </p>
                         <div className="list">
@@ -305,9 +305,8 @@ const Home = () => {
                     <div className="item__inner">
                         <h3>work<em>coding</em></h3>
                         <p className="desc2">
-                            "'GYOBOK SITE': PHP로 구축한 사용자 맞춤형 웹 경험."<br />
-                            "'YOUTUBE SITE': React와 API를 통한 빠르고 동적인 콘텐츠."<br />
-                            "'MOVIE SITE': Vue.js와 API로 혁신적인 영화 탐색."</p>
+                           
+"'GYOBOK SITE'은 PHP로 제작된 맞춤형 웹 경험, 'YOUTUBE SITE'은 React와 API를 활용한 빠르고 동적인 콘텐츠 제공, 'MOVIE SITE'은 Vue.js와 API를 활용한 혁신적인 영화 탐색을 제공합니다."</p>
                         <div className="list">
                             <ul>
                                 <li><a href="/gyobok">1</a></li>
@@ -334,7 +333,7 @@ const Home = () => {
                 </div>
                 <div className="item i12 noR">
                     <div className="item__inner">
-                        <p className="desc">
+                        <p className="desc3">
                             새로운 기술에 대한 열린 마음과 지속적인 학습의지를 가지고 있어, 새로운 도전에 대한 준비가 되어 있습니다.
                             저의 포트폴리오를 통해 더 자세한 정보를 확인하실 수 있습니다.
                             함께 일하고 성장하는 기회가 있다면 기쁘게 참여하겠습니다.</p>
