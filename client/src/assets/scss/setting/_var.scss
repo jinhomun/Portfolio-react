@@ -1,0 +1,29 @@
+:root {
+    --main-chosun: "ChosunNm";
+    --main-gmark: "GmarketSans";
+
+    --primary-color: #d2f6eb;
+
+    --black: #000;
+    --white: #fff;
+    --red: #f00;
+
+    --black100: #333;
+    --black200: #444;
+    --black300: #777;
+    --black400: #999;
+    --black500: #d7d7d7;
+    --black600: #e8e8e8;
+
+
+
+    /* font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400; */
+}
+
+@media (max-width:800px) {
+    :root {
+        font-size: 14px;
+    }
+}

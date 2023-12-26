@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* setting */
+@import "./setting/reset.scss";
+// @import "./setting/common.scss";
+@import "./setting/fonts.scss";
+@import "./setting/var.scss";
+// @import "./setting/mixin";
+
+/* section */
+@import "./section/main.scss";
