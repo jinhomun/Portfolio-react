@@ -97,6 +97,43 @@
 body {
     overflow: hidden;
 }
+
+.sliderWrap {
+    display: flex;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #000;
+}
+
+.slider {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+    background-size: cover;
+    background-position: center;
+
+}
+
+// .slider:nth-child(1) {
+//     background-image: url(../../img/gyobok1-5.png);
+//     width: 961px;
+//     height: 480px;
+// }
+
+// .slider:nth-child(2) {
+//     background-image: url(../../img/gyobok2-1.png);
+//     width: 961px;
+//     height: 480px;
+// }
+
+// .slider:nth-child(3) {
+//     background-image: url(../../img/gyobok3-1.png);
+//     width: 961px;
+//     height: 480px;
+// }
+
+
+
 #item__wrap2>div.black {
     background-color: #000;
     color: #fff;
@@ -111,21 +148,22 @@ body {
     line-height: 160%;
     padding: 14px;
 }
+
 #item__wrap2>div.title {
     padding: 14px;
 }
+
 #item__wrap2>div.title h2 {
     font-family: var(--main-gmark);
     font-size: 5vw;
     font-weight: bold;
     position: absolute;
     text-transform: uppercase;
-    padding: 2vw;
+    margin-top: 80px;
+
 }
 
-#item__wrap2>div.title ul {
-    padding: 1vw 2vw 0vw 2vw;
-}
+#item__wrap2>div.title ul {}
 
 #item__wrap2>div.title li {
     display: inline;
@@ -142,6 +180,7 @@ body {
     display: inline-block;
     font-family: var(--main-gmark);
 }
+
 #item__wrap2>div.title li:nth-child(2) a {
     width: 35px;
     height: 35px;
@@ -154,6 +193,7 @@ body {
     font-family: var(--main-gmark);
     margin-left: 5px;
 }
+
 #item__wrap2>div.title li:nth-child(3) a {
     width: 35px;
     height: 35px;
@@ -176,20 +216,22 @@ body {
     background-color: #000;
     color: #fff;
 }
+
 #item__wrap2>div.home {
     padding: 14px;
 }
+
 #item__wrap2>div.home p {
     font-family: var(--main-gmark);
     font-weight: 100;
-    font-size: 4vh;
+    font-size: 40px;
     float: right;
-    margin-top: 100px;
-    margin-right: 30px;
+    margin-top: 120px;
+    margin-right: 20px;
 }
 
 #item__wrap2>div.home img {
-    padding: 1vh 3vh 0 3vh;
+    padding: 1vh 1.5vh 0 3vh;
     width: 100%;
 }
 
@@ -200,17 +242,18 @@ body {
 #item__wrap2>div.skill h3 {
     font-family: var(--main-gmark);
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 100;
     text-transform: uppercase;
 }
 
 #item__wrap2>div.skill .desc {
-    font-family: var(--main-gmark);
+    font-family: var(--main-chosun);
     font-weight: 100;
     font-size: 20px;
     line-height: 160%;
     text-transform: uppercase;
 }
+
 #item__wrap2>div.title h3 {
     font-family: var(--main-gmark);
     font-size: 40px;
@@ -224,4 +267,397 @@ body {
     line-height: 160%;
     /* padding: 1vw 2vw 1vw 1vw; */
     text-transform: uppercase;
+}
+
+@media(max-width:1280px) {
+    #item__wrap2>div.home p {
+        font-family: var(--main-gmark);
+        font-weight: 100;
+        font-size: 35px;
+        float: right;
+        margin-top: 120px;
+        margin-right: 20px;
+    }
+
+    #item__wrap2>div.home img {
+        padding: 1vh 1.5vh 0 2vh;
+        width: 100%;
+    }
+}
+
+@media(max-width:1170px) {
+    #item__wrap2>div.title h3 {
+        font-family: var(--main-gmark);
+        font-size: 32px;
+        font-weight: 100;
+        /* padding: 1vw 0vw 0vw 1vw; */
+        text-transform: uppercase;
+    }
+
+    #item__wrap2>div.title .desc {
+        font-size: 18px;
+        line-height: 160%;
+        /* padding: 1vw 2vw 1vw 1vw; */
+        text-transform: uppercase;
+    }
+
+    #item__wrap2>div.home img {
+        padding: 1vh 1.5vh 0 2vh;
+        width: 100%;
+    }
+
+    #item__wrap2>div.home p {
+        font-family: var(--main-gmark);
+        font-weight: 100;
+        font-size: 25px;
+        float: right;
+        margin-top: 120px;
+        margin-right: 20px;
+    }
+
+    #item__wrap2>div.skill .desc {
+        font-family: var(--main-chosun);
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 160%;
+        text-transform: uppercase;
+    }
+}
+
+@media(max-width:880px) {
+    #item__wrap2 {
+        display: grid;
+        grid-template-areas:
+            "box1 box9 box9"
+            "box7 box7 box7"
+            "box7 box7 box7"
+            "box15 box5 box3"
+        ;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(4, 25vh);
+        font-family: 'ChosunNm';
+    }
+
+    #item__wrap2>div:nth-child(2) {
+        grid-area: box2;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(4) {
+        grid-area: box4;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(6) {
+        grid-area: box6;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(10) {
+        grid-area: box10;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(8) {
+        grid-area: box8;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(11) {
+        grid-area: box11;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(12) {
+        grid-area: box12;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(13) {
+        grid-area: box13;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(14) {
+        grid-area: box14;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(16) {
+        grid-area: box16;
+        display: none;
+    }
+
+    #item__wrap2>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 3.5vw;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 80px;
+
+    }
+
+    #item__wrap2>div.skill h3 {
+        font-family: var(--main-gmark);
+        font-size: 32px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    #item__wrap2>div.black .desc {
+        font-size: 14px;
+        line-height: 160%;
+        padding: 14px;
+    }
+
+    #item__wrap2>div.home img {
+        padding: 1vh 0.5vh 0 0vh;
+        width: 100%;
+    }
+
+    #item__wrap2>div.home p {
+        font-family: var(--main-gmark);
+        font-weight: 100;
+        font-size: 20px;
+        float: right;
+        margin-top: 120px;
+        margin-right: 20px;
+    }
+
+    // .slider:nth-child(1) {
+    //     background-image: url(../../img/gyobok1-5.png);
+    //     width: 961px;
+    //     height: 476px;
+
+    // }
+
+    // .slider:nth-child(2) {
+    //     background-image: url(../../img/gyobok2-1.png);
+    //     width: 961px;
+    //     height: 476px;
+    // }
+
+    // .slider:nth-child(3) {
+    //     background-image: url(../../img/gyobok3-1.png);
+    //     width: 961px;
+    //     height: 476px;
+    // }
+
+
+}
+
+@media (max-width:740px) {
+    #item__wrap2>div.skill .desc {
+        font-family: var(--main-chosun);
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 160%;
+        text-transform: uppercase;
+    }
+
+    #item__wrap2>div.black .desc {
+        font-size: 14px;
+        line-height: 160%;
+        padding: 14px;
+    }
+
+    // .slider:nth-child(1) {
+    //     background-image: url(../../img/gyobok1-5.png);
+
+    //     height: 476px;
+    // }
+
+    // .slider:nth-child(2) {
+    //     background-image: url(../../img/gyobok2-1.png);
+
+    //     height: 476px;
+    // }
+
+    // .slider:nth-child(3) {
+    //     background-image: url(../../img/gyobok3-1.png);
+
+    //     height: 476px;
+    // }
+
+
+}
+
+@media (max-width: 660px) {
+    #item__wrap2 {
+        display: grid;
+        grid-template-areas:
+            "box1 box3"
+            "box7 box7"
+            "box7 box7"
+            "box7 box7"
+            "box9 box9"
+            "box9 box9"
+            "box5 box15"
+            "box5 box15"
+        ;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(8, 12.5vh);
+        font-family: 'ChosunNm';
+    }
+
+    #item__wrap2>div:nth-child(2) {
+        grid-area: box2;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(4) {
+        grid-area: box4;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(6) {
+        grid-area: box6;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(10) {
+        grid-area: box10;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(8) {
+        grid-area: box8;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(11) {
+        grid-area: box11;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(12) {
+        grid-area: box12;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(13) {
+        grid-area: box13;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(14) {
+        grid-area: box14;
+        display: none;
+    }
+
+    #item__wrap2>div:nth-child(16) {
+        grid-area: box16;
+        display: none;
+
+    }
+
+    #item__wrap2>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 3.5vw;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 25px;
+
+    }
+
+    #item__wrap2>div.home p {
+        font-family: var(--main-gmark);
+        font-weight: 100;
+        font-size: 20px;
+        float: right;
+        margin-top: 40px;
+        margin-right: 20px;
+    }
+
+    #item__wrap2>div.skill h3 {
+        font-family: var(--main-gmark);
+        font-size: 25px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    #item__wrap2>div.skill .desc {
+        font-family: var(--main-chosun);
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 160%;
+        text-transform: uppercase;
+    }
+
+    #item__wrap2>div.title h3 {
+        font-family: var(--main-gmark);
+        font-size: 25px;
+        font-weight: 100;
+        /* padding: 1vw 0vw 0vw 1vw; */
+        text-transform: uppercase;
+    }
+
+    #item__wrap2>div.title .desc {
+        font-size: 15px;
+        line-height: 160%;
+        /* padding: 1vw 2vw 1vw 1vw; */
+        text-transform: uppercase;
+    }
+
+    // .slider:nth-child(1) {
+    //     background-image: url(../../img/gyobok1-5.png);
+
+    //     height: 357px;
+    // }
+
+    // .slider:nth-child(2) {
+    //     background-image: url(../../img/gyobok2-1.png);
+
+    //     height: 357px;
+    // }
+
+    // .slider:nth-child(3) {
+    //     background-image: url(../../img/gyobok3-1.png);
+
+    //     height: 357px;
+    // }
+
+    #item__wrap2>div.black .desc {
+        font-size: 14px;
+        line-height: 160%;
+        padding: 14px;
+    }
+}
+
+@media (max-height:600px) {
+    // .slider:nth-child(1) {
+    //     background-image: url(../../img/gyobok1-5.png);
+
+    //     height: 312px;
+    // }
+
+    // .slider:nth-child(2) {
+    //     background-image: url(../../img/gyobok2-1.png);
+
+    //     height: 312px;
+    // }
+
+    // .slider:nth-child(3) {
+    //     background-image: url(../../img/gyobok3-1.png);
+
+    //     height: 312px;
+    // }
+
+    #item__wrap2>div.black .desc {
+        font-size: 13px;
+        line-height: 160%;
+        padding: 14px;
+    }
+
+    #item__wrap2>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 3.5vw;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 20px;
+
+    }
 }

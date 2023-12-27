@@ -3,6 +3,8 @@ import Main from './page/Main'
 import { Route, Routes } from 'react-router-dom'
 import Home from './page/Home'
 import Gyobok from './page/Gyobok'
+import Youtube from './page/Youtube'
+import Movie from './page/Movie'
 
 const App = () => {
   return (
@@ -16,9 +18,9 @@ const App = () => {
         <Route path='/wpoint' element={<Wpoint />} />
         <Route path='/vite' element={<Vite />} /> */}
         <Route path='/gyobok' element={<Gyobok />} />
-        {/* <Route path='/youtube' element={<Youtube />} />
+        <Route path='/youtube' element={<Youtube />} />
         <Route path='/movie' element={<Movie />} />
-        <Route path='/contact' element={<Contact />} /> */}
+        {/* <Route path='/contact' element={<Contact />} /> */}
       </Routes>
     </Main>
   )

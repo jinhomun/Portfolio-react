@@ -2,12 +2,9 @@ import React from 'react'
 // import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgGyobok1 from '../assets/img/gyobok1-5.png'
-import imgGyobok2 from '../assets/img/gyobok2-1.png'
-import imgGyobok3 from '../assets/img/gyobok3-1.png'
-import SliderScript from '../assets/script/SliderScript'
+import imgYoutube from '../assets/img/youtube.png'
 
-const Gyobok = () => {
+const Youtube = () => {
     // useEffect(() => {
 
     //     gsap.set(".item.i1 .item__inner", {
@@ -178,7 +175,7 @@ const Gyobok = () => {
     //     // // Call the linkClickHandler function for each link with the correct destination
     //     // linkClickHandler(".item.i1 .list a", "/gsap","/quiz","/search");
     //     linkClickHandler(".item.i3 a", "/");
-    //     linkClickHandler(".item.i4 a", "/youtube");
+    //     linkClickHandler(".item.i4 a", "/movie");
 
     //     // ...
 
@@ -189,11 +186,11 @@ const Gyobok = () => {
                 <div className="item i1 title">
                     <div className="item__inner">
                         <ul>
-                            <li className="active"><a href="/gyobok">1</a></li>
-                            <li><a href="/youtube">2</a></li>
+                            <li><a href="/gyobok">1</a></li>
+                            <li className="active"><a href="/youtube">2</a></li>
                             <li><a href="/movie">3</a></li>
                         </ul>
-                        <h2 className="long">gyobok site</h2>
+                        <h2 className="long">youtube site</h2>
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -212,8 +209,8 @@ const Gyobok = () => {
                 </div>
                 <div className="item i4 noR home">
                     <div className="item__inner">
-                        <a href="/youtube">
-                            <p>YOUTUBE.S</p>
+                        <a href="/movie">
+                            <p>MOVIE.S</p>
                             <img src={arrow} alt="화살표"></img>
                         </a>
                     </div>
@@ -223,7 +220,8 @@ const Gyobok = () => {
                     <div className="item__inner">
                         <h3>skill</h3>
                         <p className="desc">
-                            교복사이트 프로젝트에서 VSC와 JavaScript, HTML, CSS, PHP, PHPMyAdmin, jQuery, Git을 활용
+                            축구유튜브 사이트에서 VSC와 React, sass, API, Netlify,Postman,Git을 활용
+
                         </p>
                     </div>
                     <div className="item__bg"></div>
@@ -232,20 +230,9 @@ const Gyobok = () => {
                     <div className="item__inner"></div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i7 img">
+                <div className="item i7 noR img">
                     <div className="item__inner">
-                        <SliderScript />
-                        <div className="sliderWrap">
-                            <div className="slider">
-                                <img src={imgGyobok1} alt="gyobok01" />
-                            </div>
-                            <div className="slider">
-                                <img src={imgGyobok2} alt="gyobok02" />
-                            </div>
-                            <div className="slider">
-                                <img src={imgGyobok3} alt="gyobok03" />
-                            </div>
-                        </div>
+                        <img src={imgYoutube} alt="youtube01" />
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -256,15 +243,11 @@ const Gyobok = () => {
                 <div className="item i9 black">
                     <div className="item__inner">
                         <p className="desc">
-                            전국에 있는 고등학교 교복을 모아둔 교복소개 사이트 입니다.
-                            직장인 커뮤니티, 대학생 커뮤니티 “왜 청소년을 위한 커뮤니티는 없을까?” 라는 생각에서
-                            진행하게 된 프로젝트입니다!
-                            학교에서 얻을 수 없는 독특한 정보를 제공하고자,
-                            전국 고등학교의 교복을 소개하는 커뮤니티 사이트를 제작하였습니다.
-                            전국의 교복을 구격하며 투표를 할 수 있고, 그에 대한 평가는 댓글로도 자유롭게 논할 수 있습니다.
-                            투표가 진행된 해당 학교의 교복은 인기 순위로 매겨지고
-                            각 조회수, 좋아요, 싫어요 순으로 순위를 확인할 수 있습니다.
-                            또, “수다방” 커뮤니티에서 학생들만의 이야기로 수다의 꽃을 피울 수 있습니다!
+                            축구를 좋아해서 react, axios, swiper, api를 이용해서 soccer youtube를 만들었습니다.<br />
+                            soccer youtube는 축구 팬들을 위한 전용 유튜브 사이트 입니다.<br />
+                            우리는 최신 축구 소식, 트렌드 , 전략, 그리고 멋진 순간들을 모두 모았습니다.<br />
+                            여기에서는 세계 각지에서 벌어지는 축구 경기의 하이라이트 부터,<br />
+                            선수들의 인터뷰, 팀의 훈련 영상까지 다양한 콘텐츠를 즐길 수 있습니다.<br />
                         </p>
                     </div>
                     <div className="item__bg"></div>
@@ -303,8 +286,7 @@ const Gyobok = () => {
                     <div className="item__inner">
                         <h3>site view</h3>
                         <p className="desc">
-                            깃에 올린 파일을 직접 볼 수 있습니다.
-                        </p>
+                            netrify에 올린 파일을 직접 볼 수 있습니다.</p>
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -313,4 +295,4 @@ const Gyobok = () => {
     )
 }
 
-export default Gyobok
+export default Youtube
