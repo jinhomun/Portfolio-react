@@ -5,14 +5,15 @@ import Home from './page/Home'
 import Gyobok from './page/Gyobok'
 import Youtube from './page/Youtube'
 import Movie from './page/Movie'
+import Aboutme from './page/Aboutme'
 
 const App = () => {
   return (
     <Main>
       <Routes>
         <Route path='/' element={<Home />} />
-        {/* <Route path='/aboutme' element={<Aboutme />} />
-        <Route path='/gsap' element={<Gsap />} />
+        <Route path='/aboutme' element={<Aboutme />} />
+        {/* <Route path='/gsap' element={<Gsap />} />
         <Route path='/quiz' element={<Quiz />} />
         <Route path='/search' element={<Search />} />
         <Route path='/wpoint' element={<Wpoint />} />

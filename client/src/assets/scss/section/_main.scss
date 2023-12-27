@@ -169,7 +169,7 @@ body {
 }
 
 #item__wrap>div.title h3 em {
-    font-size: 14px;
+    font-size: 20px;
     color: #969696;
     padding-left: 10px;
 }
@@ -421,7 +421,7 @@ body {
     }
 
     #item__wrap>div.title h3 em {
-        font-size: 10px;
+        font-size: 15px;
         color: #969696;
         padding-left: 8px;
     }
@@ -577,6 +577,11 @@ body {
     #item__wrap>div:nth-child(5) {
         grid-area: box5;
         display: none;
+    }
+    #item__wrap>div.title h3 em {
+        font-size: 12px;
+        color: #969696;
+        padding-left: 8px;
     }
 
 }
