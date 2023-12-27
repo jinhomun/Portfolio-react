@@ -572,7 +572,7 @@ body {
 
     #item__wrap2>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 3.5vw;
+        font-size: 5vw;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -606,7 +606,7 @@ body {
 
     #item__wrap2>div.title h3 {
         font-family: var(--main-gmark);
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 100;
         /* padding: 1vw 0vw 0vw 1vw; */
         text-transform: uppercase;
@@ -685,5 +685,12 @@ body {
         text-transform: uppercase;
         margin-top: 20px;
 
+    }
+}
+@media (max-width: 360px) {
+    #item__wrap2>div.black .desc {
+        font-size: 11px;
+        line-height: 160%;
+        padding: 14px;
     }
 }
