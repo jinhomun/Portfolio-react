@@ -530,7 +530,7 @@ body {
         text-transform: uppercase;
         font-weight: 900;
         // position: absolute;
-        margin-top: 15px;
+        margin-top: 0px;
 
     }
 
@@ -586,7 +586,7 @@ body {
     }
 
     #item__wrap>div.title .desc2 {
-        font-size: 11px;
+        font-size: 12px;
         line-height: 160%;
     }
 
@@ -604,7 +604,14 @@ body {
 
     #item__wrap>div.black__me img {
         width: 223px;
-        height: 213px;
+        height: 180px;
+    }
+
+    #item__wrap>div.title h3 {
+        font-size: 16px;
+        font-family: 'GmarketSans';
+        text-transform: uppercase;
+        font-weight: 100;
     }
 
 }
@@ -622,10 +629,10 @@ body {
         font-weight: 100;
     }
 
-    #item__wrap>div.black__me img {
-        width: 223px;
-        height: 213px;
-    }
+    // #item__wrap>div.black__me img {
+    //     width: 223px;
+    //     height: 213px;
+    // }
 
 }
 
