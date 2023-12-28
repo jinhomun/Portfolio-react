@@ -575,28 +575,28 @@ body {
     }
 
     #item__wrap>div.title h3 em {
-        font-size: 12px;
+        font-size: 2.5vw;
         color: #969696;
         padding-left: 8px;
     }
 
     #item__wrap>div.black .desc {
-        font-size: 14px;
+        font-size: 3vw;
         line-height: 160%;
     }
 
     #item__wrap>div.title .desc2 {
-        font-size: 12px;
+        font-size: 2.8vw;
         line-height: 160%;
     }
 
     #item__wrap>div.title p {
-        font-size: 13px;
+        font-size: 3vw;
         line-height: 160%;
     }
 
     #item__wrap>div.title h3 {
-        font-size: 20px;
+        font-size: 4vw;
         font-family: 'GmarketSans';
         text-transform: uppercase;
         font-weight: 100;
@@ -605,13 +605,6 @@ body {
     #item__wrap>div.black__me img {
         width: 100%;
         height: auto;
-    }
-
-    #item__wrap>div.title h3 {
-        font-size: 16px;
-        font-family: 'GmarketSans';
-        text-transform: uppercase;
-        font-weight: 100;
     }
 
 }
