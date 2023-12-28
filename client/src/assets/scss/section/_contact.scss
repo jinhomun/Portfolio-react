@@ -301,10 +301,10 @@ body {
     }
 
     #item__wrap4>div.icon img {
-        width: 4vw;
-        height: 4vw;
-        margin-right: 1vw;
-        margin-bottom: 1vw;
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
 }
@@ -533,5 +533,11 @@ body {
         cursor: pointer;
         height: 50%;
         display: block;
+    }
+    #item__wrap4>div.icon img {
+        width: 7vw;
+        height: 7vw;
+        margin-right: 10px;
+        margin-bottom: 0px;
     }
 }
