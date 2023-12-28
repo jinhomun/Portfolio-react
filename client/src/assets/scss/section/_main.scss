@@ -603,8 +603,8 @@ body {
     }
 
     #item__wrap>div.black__me img {
-        width: 223px;
-        height: 180px;
+        width: 100%;
+        height: auto;
     }
 
     #item__wrap>div.title h3 {
@@ -616,51 +616,51 @@ body {
 
 }
 
-@media(max-width:495px) {
-    #item__wrap>div.black .desc {
-        font-size: 14px;
-        line-height: 160%;
-    }
+// @media(max-width:495px) {
+//     #item__wrap>div.black .desc {
+//         font-size: 14px;
+//         line-height: 160%;
+//     }
 
-    #item__wrap>div.title h3 {
-        font-size: 20px;
-        font-family: 'GmarketSans';
-        text-transform: uppercase;
-        font-weight: 100;
-    }
+//     #item__wrap>div.title h3 {
+//         font-size: 20px;
+//         font-family: 'GmarketSans';
+//         text-transform: uppercase;
+//         font-weight: 100;
+//     }
 
-    // #item__wrap>div.black__me img {
-    //     width: 223px;
-    //     height: 213px;
-    // }
+//     // #item__wrap>div.black__me img {
+//     //     width: 223px;
+//     //     height: 213px;
+//     // }
 
-}
+// }
 
-@media(max-width:360px) {
-    #item__wrap>div.black .desc {
-        font-size: 13px;
-        line-height: 160%;
-    }
+// @media(max-width:360px) {
+//     #item__wrap>div.black .desc {
+//         font-size: 13px;
+//         line-height: 160%;
+//     }
 
-    #item__wrap>div.title h3 {
-        font-size: 15px;
-        font-family: 'GmarketSans';
-        text-transform: uppercase;
-        font-weight: 100;
-    }
+//     #item__wrap>div.title h3 {
+//         font-size: 15px;
+//         font-family: 'GmarketSans';
+//         text-transform: uppercase;
+//         font-weight: 100;
+//     }
 
-    #item__wrap>div.title .desc2 {
-        font-size: 11px;
-        line-height: 160%;
-    }
+//     #item__wrap>div.title .desc2 {
+//         font-size: 11px;
+//         line-height: 160%;
+//     }
 
-    #item__wrap>div.title p {
-        font-size: 13px;
-        line-height: 160%;
-    }
+//     #item__wrap>div.title p {
+//         font-size: 13px;
+//         line-height: 160%;
+//     }
 
-    #item__wrap>div.black__me img {
-        width: 181px;
-        height: 212px;
-    }
-}
+//     #item__wrap>div.black__me img {
+//         width: 181px;
+//         height: 212px;
+//     }
+// }
