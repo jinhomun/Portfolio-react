@@ -275,7 +275,7 @@ const Home = () => {
                 <div className="item i6 title">
                     <div className="item__inner">
                         <h3>site<em>coding</em></h3>
-                        <p className="desc">
+                        <p className="desc3">
                             웹 표준을 준수하며 복잡한 레이아웃과 반응형 디자인을 다루고, 패럴랙스 스크롤링을 활용하여 웹 개발에서의 다양한 경험을 쌓아왔습니다.
                         </p>
                         <div className="list">
@@ -306,7 +306,6 @@ const Home = () => {
                     <div className="item__inner">
                         <h3>work<em>coding</em></h3>
                         <p className="desc2">
-
                             "'GYOBOK SITE'은 PHP로 제작된 맞춤형 웹 경험, 'YOUTUBE SITE'은 React와 API를 활용한 빠르고 동적인 콘텐츠 제공, 'MOVIE SITE'은 Vue.js와 API를 활용한 혁신적인 영화 탐색을 제공합니다."</p>
                         <div className="list">
                             <ul>
