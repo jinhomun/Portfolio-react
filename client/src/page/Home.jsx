@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import gsap from 'gsap'
 // img
 import imgME from '../assets/img/about1.png'
 import KOR from '../assets/img/KOR.png'
@@ -7,220 +8,220 @@ import KOR from '../assets/img/KOR.png'
 
 const Home = () => {
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     gsap.set(".item.i3 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i6 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i9 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i7 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i1 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i11 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i12 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i15 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i16 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i10 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i13 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-
-
-
-    //     gsap.to(".item.i3 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 0.3
-    //     });
-    //     gsap.to(".item.i6 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 0.6
-    //     })
-    //     gsap.to(".item.i9 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 0.9
-    //     })
-    //     gsap.to(".item.i7 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.2
-    //     })
-    //     gsap.to(".item.i1 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.5
-    //     });
-    //     gsap.to(".item.i11 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.5
-    //     })
-    //     gsap.to(".item.i12 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.7
-    //     })
-    //     gsap.to(".item.i15 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.7
-    //     })
-    //     gsap.to(".item.i16 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.7
-    //     })
-    //     gsap.to(".item.i10 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.9
-    //     })
-    //     gsap.to(".item.i13 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.9
-    //     })
-    //     gsap.to(".item.i2 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 2.1
-    //     })
-    //     gsap.to(".item.i4 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 2.1
-    //     })
-    //     gsap.to(".item.i5 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 2.1
-    //     })
+        gsap.set(".item.i3 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i6 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i9 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i7 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i1 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i11 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i12 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i15 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i16 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i10 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i13 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
 
 
 
-    //     gsap.to(".item.i3 .item__inner", {
-    //         opacity: 1,
-    //         delay: 0.6,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i6 .item__inner", {
-    //         opacity: 1,
-    //         delay: 0.9,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i9 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.2,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i7 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.5,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i1 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.8,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i11 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.8,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i12 .item__inner", {
-    //         opacity: 1,
-    //         delay: 2.1,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i15 .item__inner", {
-    //         opacity: 1,
-    //         delay: 2.1,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i16 .item__inner", {
-    //         opacity: 1,
-    //         delay: 2.1,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i10 .item__inner", {
-    //         opacity: 1,
-    //         delay: 2.3,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i13 .item__inner", {
-    //         opacity: 1,
-    //         delay: 2.3,
-    //         y: 0
-    //     });
+        gsap.to(".item.i3 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 0.3
+        });
+        gsap.to(".item.i6 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 0.6
+        })
+        gsap.to(".item.i9 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 0.9
+        })
+        gsap.to(".item.i7 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.2
+        })
+        gsap.to(".item.i1 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.5
+        });
+        gsap.to(".item.i11 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.5
+        })
+        gsap.to(".item.i12 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.7
+        })
+        gsap.to(".item.i15 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.7
+        })
+        gsap.to(".item.i16 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.7
+        })
+        gsap.to(".item.i10 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.9
+        })
+        gsap.to(".item.i13 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.9
+        })
+        gsap.to(".item.i2 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 2.1
+        })
+        gsap.to(".item.i4 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 2.1
+        })
+        gsap.to(".item.i5 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 2.1
+        })
 
-    //     const linkClickHandler = (linkSelector, destination) => {
-    //         const links = document.querySelectorAll(linkSelector);
 
-    //         if (links.length > 0) {
-    //             links.forEach(link => {
-    //                 link.addEventListener('click', (event) => {
-    //                     event.preventDefault();
 
-    //                     gsap.to(".item__bg", {
-    //                         height: "100%",
-    //                         ease: "power3.inOut",
-    //                         onComplete: () => {
-    //                             // Use window.location.pathname to navigate
-    //                             window.location.pathname = destination;
-    //                         },
-    //                     });
-    //                 });
-    //             });
-    //         }
-    //     };
+        gsap.to(".item.i3 .item__inner", {
+            opacity: 1,
+            delay: 0.6,
+            y: 0
+        });
+        gsap.to(".item.i6 .item__inner", {
+            opacity: 1,
+            delay: 0.9,
+            y: 0
+        });
+        gsap.to(".item.i9 .item__inner", {
+            opacity: 1,
+            delay: 1.2,
+            y: 0
+        });
+        gsap.to(".item.i7 .item__inner", {
+            opacity: 1,
+            delay: 1.5,
+            y: 0
+        });
+        gsap.to(".item.i1 .item__inner", {
+            opacity: 1,
+            delay: 1.8,
+            y: 0
+        });
+        gsap.to(".item.i11 .item__inner", {
+            opacity: 1,
+            delay: 1.8,
+            y: 0
+        });
+        gsap.to(".item.i12 .item__inner", {
+            opacity: 1,
+            delay: 2.1,
+            y: 0
+        });
+        gsap.to(".item.i15 .item__inner", {
+            opacity: 1,
+            delay: 2.1,
+            y: 0
+        });
+        gsap.to(".item.i16 .item__inner", {
+            opacity: 1,
+            delay: 2.1,
+            y: 0
+        });
+        gsap.to(".item.i10 .item__inner", {
+            opacity: 1,
+            delay: 2.3,
+            y: 0
+        });
+        gsap.to(".item.i13 .item__inner", {
+            opacity: 1,
+            delay: 2.3,
+            y: 0
+        });
 
-    //     // 함수 호출 - 각 링크에 대해 개별적으로 호출
-    //     linkClickHandler(".item.i3 .list li:nth-child(1) a", "/gsap");
-    //     linkClickHandler(".item.i3 .list li:nth-child(2) a", "/quiz");
-    //     linkClickHandler(".item.i3 .list li:nth-child(3) a", "/search");
+        const linkClickHandler = (linkSelector, destination) => {
+            const links = document.querySelectorAll(linkSelector);
 
-    //     linkClickHandler(".item.i6 .list li:nth-child(1) a", "/wpoint");
-    //     linkClickHandler(".item.i6 .list li:nth-child(2) a", "/vite");
+            if (links.length > 0) {
+                links.forEach(link => {
+                    link.addEventListener('click', (event) => {
+                        event.preventDefault();
 
-    //     linkClickHandler(".item.i9 .list li:nth-child(1) a", "/gyobok");
-    //     linkClickHandler(".item.i9 .list li:nth-child(2) a", "/youtube");
-    //     linkClickHandler(".item.i9 .list li:nth-child(3) a", "/movie");
+                        gsap.to(".item__bg", {
+                            height: "100%",
+                            ease: "power3.inOut",
+                            onComplete: () => {
+                                // Use window.location.pathname to navigate
+                                window.location.pathname = destination;
+                            },
+                        });
+                    });
+                });
+            }
+        };
 
-    //     linkClickHandler(".item.i15 a", "/aboutme");
-    //     linkClickHandler(".item.i16 a", "/contact");
-    // }, []);
+        // 함수 호출 - 각 링크에 대해 개별적으로 호출
+        linkClickHandler(".item.i3 .list li:nth-child(1) a", "/gsap");
+        linkClickHandler(".item.i3 .list li:nth-child(2) a", "/quiz");
+        linkClickHandler(".item.i3 .list li:nth-child(3) a", "/search");
+
+        linkClickHandler(".item.i6 .list li:nth-child(1) a", "/wpoint");
+        linkClickHandler(".item.i6 .list li:nth-child(2) a", "/vite");
+
+        linkClickHandler(".item.i9 .list li:nth-child(1) a", "/gyobok");
+        linkClickHandler(".item.i9 .list li:nth-child(2) a", "/youtube");
+        linkClickHandler(".item.i9 .list li:nth-child(3) a", "/movie");
+
+        linkClickHandler(".item.i15 a", "/aboutme");
+        linkClickHandler(".item.i16 a", "/contact");
+    }, []);
 
 
 
@@ -305,8 +306,8 @@ const Home = () => {
                     <div className="item__inner">
                         <h3>work<em>coding</em></h3>
                         <p className="desc2">
-                           
-"'GYOBOK SITE'은 PHP로 제작된 맞춤형 웹 경험, 'YOUTUBE SITE'은 React와 API를 활용한 빠르고 동적인 콘텐츠 제공, 'MOVIE SITE'은 Vue.js와 API를 활용한 혁신적인 영화 탐색을 제공합니다."</p>
+
+                            "'GYOBOK SITE'은 PHP로 제작된 맞춤형 웹 경험, 'YOUTUBE SITE'은 React와 API를 활용한 빠르고 동적인 콘텐츠 제공, 'MOVIE SITE'은 Vue.js와 API를 활용한 혁신적인 영화 탐색을 제공합니다."</p>
                         <div className="list">
                             <ul>
                                 <li><a href="/gyobok">1</a></li>

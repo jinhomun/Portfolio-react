@@ -1,5 +1,5 @@
-import React from 'react'
-// import gsap from 'gsap';
+import React, { useEffect } from 'react'
+import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
 import imgAboutme from '../assets/img/about1.png'
@@ -9,175 +9,175 @@ import mail from '../assets/img/mail.svg'
 import comment from '../assets/img/comment.svg'
 
 const Aboutme = () => {
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     gsap.set(".item.i16 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i1 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i14 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i8 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i12 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i13 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-    //     gsap.set(".item.i4 .item__inner", {
-    //         opacity: 0,
-    //         y: 30
-    //     });
-
-
+        gsap.set(".item.i16 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i1 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i14 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i8 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i12 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i13 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
+        gsap.set(".item.i4 .item__inner", {
+            opacity: 0,
+            y: 30
+        });
 
 
 
-    //     gsap.to(".item.i16 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 0.3
-    //     });
-    //     gsap.to(".item.i1 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 0.6
-    //     })
-    //     gsap.to(".item.i14 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 0.9
-    //     })
-    //     gsap.to(".item.i8 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.2
-    //     })
-    //     gsap.to(".item.i12 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.5
-    //     });
-    //     gsap.to(".item.i13 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.5
-    //     })
-    //     gsap.to(".item.i4 .item__bg", {
-    //         height: "0%",
-    //         ease: "power3.inOut",
-    //         delay: 1.7
-    //     })
-    //     // gsap.to(".item.i16 .item__bg", {
-    //     //     height: "0%",
-    //     //     ease: "power3.inOut",
-    //     //     delay: 1.7
-    //     // })
-    //     // gsap.to(".item.i6 .item__bg", {
-    //     //     height: "0%",
-    //     //     ease: "power3.inOut",
-    //     //     delay: 1.9
-    //     // })
-    //     // gsap.to(".item.i10 .item__bg", {
-    //     //     height: "0%",
-    //     //     ease: "power3.inOut",
-    //     //     delay: 1.9
-    //     // })
-    //     // gsap.to(".item.i13 .item__bg", {
-    //     //     height: "0%",
-    //     //     ease: "power3.inOut",
-    //     //     delay: 1.9
-    //     // })
-    //     // gsap.to(".item.i2 .item__bg", {
-    //     //     height: "0%",
-    //     //     ease: "power3.inOut",
-    //     //     delay: 2.1
-    //     // })
-    //     // gsap.to(".item.i4 .item__bg", {
-    //     //     height: "0%",
-    //     //     ease: "power3.inOut",
-    //     //     delay: 2.1
-    //     // })
-    //     // gsap.to(".item.i5 .item__bg", {
-    //     //     height: "0%",
-    //     //     ease: "power3.inOut",
-    //     //     delay: 2.1
-    //     // })
+
+
+        gsap.to(".item.i16 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 0.3
+        });
+        gsap.to(".item.i1 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 0.6
+        })
+        gsap.to(".item.i14 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 0.9
+        })
+        gsap.to(".item.i8 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.2
+        })
+        gsap.to(".item.i12 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.5
+        });
+        gsap.to(".item.i13 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.5
+        })
+        gsap.to(".item.i4 .item__bg", {
+            height: "0%",
+            ease: "power3.inOut",
+            delay: 1.7
+        })
+        // gsap.to(".item.i16 .item__bg", {
+        //     height: "0%",
+        //     ease: "power3.inOut",
+        //     delay: 1.7
+        // })
+        // gsap.to(".item.i6 .item__bg", {
+        //     height: "0%",
+        //     ease: "power3.inOut",
+        //     delay: 1.9
+        // })
+        // gsap.to(".item.i10 .item__bg", {
+        //     height: "0%",
+        //     ease: "power3.inOut",
+        //     delay: 1.9
+        // })
+        // gsap.to(".item.i13 .item__bg", {
+        //     height: "0%",
+        //     ease: "power3.inOut",
+        //     delay: 1.9
+        // })
+        // gsap.to(".item.i2 .item__bg", {
+        //     height: "0%",
+        //     ease: "power3.inOut",
+        //     delay: 2.1
+        // })
+        // gsap.to(".item.i4 .item__bg", {
+        //     height: "0%",
+        //     ease: "power3.inOut",
+        //     delay: 2.1
+        // })
+        // gsap.to(".item.i5 .item__bg", {
+        //     height: "0%",
+        //     ease: "power3.inOut",
+        //     delay: 2.1
+        // })
 
 
 
-    //     gsap.to(".item.i16 .item__inner", {
-    //         opacity: 1,
-    //         delay: 0.6,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i1 .item__inner", {
-    //         opacity: 1,
-    //         delay: 0.9,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i14 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.2,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i8 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.5,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i12 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.8,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i13 .item__inner", {
-    //         opacity: 1,
-    //         delay: 1.8,
-    //         y: 0
-    //     });
-    //     gsap.to(".item.i4 .item__inner", {
-    //         opacity: 1,
-    //         delay: 2.1,
-    //         y: 0
-    //     });
+        gsap.to(".item.i16 .item__inner", {
+            opacity: 1,
+            delay: 0.6,
+            y: 0
+        });
+        gsap.to(".item.i1 .item__inner", {
+            opacity: 1,
+            delay: 0.9,
+            y: 0
+        });
+        gsap.to(".item.i14 .item__inner", {
+            opacity: 1,
+            delay: 1.2,
+            y: 0
+        });
+        gsap.to(".item.i8 .item__inner", {
+            opacity: 1,
+            delay: 1.5,
+            y: 0
+        });
+        gsap.to(".item.i12 .item__inner", {
+            opacity: 1,
+            delay: 1.8,
+            y: 0
+        });
+        gsap.to(".item.i13 .item__inner", {
+            opacity: 1,
+            delay: 1.8,
+            y: 0
+        });
+        gsap.to(".item.i4 .item__inner", {
+            opacity: 1,
+            delay: 2.1,
+            y: 0
+        });
 
 
-    //     const linkClickHandler = (linkSelector, destination) => {
-    //         document.querySelector(linkSelector).addEventListener('click', (event) => {
-    //             event.preventDefault(); // 링크의 기본 동작 방지
+        const linkClickHandler = (linkSelector, destination) => {
+            document.querySelector(linkSelector).addEventListener('click', (event) => {
+                event.preventDefault(); // 링크의 기본 동작 방지
 
-    //             gsap.to(".item__bg", {
-    //                 height: "100%",
-    //                 ease: "power3.inOut",
-    //                 onComplete: () => {
-    //                     // 애니메이션이 완료된 후 링크로 이동
-    //                     window.location.href = destination;
-    //                 },
-    //             });
-    //         });
-    //     };
+                gsap.to(".item__bg", {
+                    height: "100%",
+                    ease: "power3.inOut",
+                    onComplete: () => {
+                        // 애니메이션이 완료된 후 링크로 이동
+                        window.location.href = destination;
+                    },
+                });
+            });
+        };
 
-    //     // ...
+        // ...
 
-    //     linkClickHandler("#item__wrap3 .item.i4 a", "/");
-    //     linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(1)", "/contact");
-    //     linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(2)", "https://github.com/jinhomun");
-    //     linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com");
-    //     linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(4)", "https://www.instagram.com/coding_jinho/");
+        linkClickHandler("#item__wrap3 .item.i4 a", "/");
+        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(1)", "/contact");
+        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(2)", "https://github.com/jinhomun");
+        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com");
+        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(4)", "https://www.instagram.com/coding_jinho/");
 
-    // }, []);
+    }, []);
     return (
         <>
             <div id="item__wrap3" className="fixed">

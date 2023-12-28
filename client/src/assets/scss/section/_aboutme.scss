@@ -1,6 +1,6 @@
-/* body {
+body {
     overflow: hidden;
-} */
+}
 
 #fixed {
     width: 100%;
@@ -26,10 +26,12 @@
 
 #item__wrap3>div:nth-child(2) {
     grid-area: box2;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(3) {
     grid-area: box3;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(4) {
@@ -38,14 +40,17 @@
 
 #item__wrap3>div:nth-child(5) {
     grid-area: box5;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(6) {
     grid-area: box6;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(7) {
     grid-area: box7;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(8) {
@@ -54,14 +59,17 @@
 
 #item__wrap3>div:nth-child(9) {
     grid-area: box9;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(10) {
     grid-area: box10;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(11) {
     grid-area: box11;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(12) {
@@ -76,8 +84,9 @@
     grid-area: box14;
 }
 
-#item__wrap2>div:nth-child(15) {
+#item__wrap3>div:nth-child(15) {
     grid-area: box15;
+    display: none;
 }
 
 #item__wrap3>div:nth-child(16) {
@@ -258,18 +267,27 @@
 }
 
 #item__wrap3>div.icon img {
-    width: 1.8vw;
-    height: 1.8vw;
-    margin-right: 1vw;
-    margin-bottom: 1vw;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
+
 @media(max-width:1670px) {
     #item__wrap3>div.title .desc {
         font-size: 15px;
         line-height: 160%;
         text-transform: uppercase;
     }
+
+    #item__wrap3>div.icon img {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
+
 @media(max-width:1280px) {
     #item__wrap3>div.home p {
         font-family: var(--main-gmark);
@@ -285,6 +303,7 @@
         width: 100%;
     }
 }
+
 @media(max-width:1170px) {
     #item__wrap3>div.title h3 {
         font-family: var(--main-gmark);
@@ -308,7 +327,7 @@
         margin-right: 20px;
     }
 
-   
+
 }
 
 @media(max-width:1025px) {
@@ -319,18 +338,35 @@
         /* padding: 1vw 0vw 0vw 1vw; */
         text-transform: uppercase;
     }
+
     #item__wrap3>div.title .desc {
         font-size: 14px;
         line-height: 160%;
         text-transform: uppercase;
     }
+
+    #item__wrap3>div.icon img {
+        width: 43px;
+        height: 43px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
+
 @media(max-width:945px) {
     #item__wrap3>div.black__img img {
         width: 645px;
         height: 714px;
     }
+
+    #item__wrap3>div.icon img {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
+
 @media(max-width:880px) {
     #item__wrap3 {
         display: grid;
@@ -344,10 +380,57 @@
         grid-template-rows: repeat(4, 25vh);
         font-family: 'ChosunNm';
     }
+
+    #item__wrap3>div:nth-child(2) {
+        grid-area: box2;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(3) {
+        grid-area: box3;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(5) {
+        grid-area: box5;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(6) {
+        grid-area: box6;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(7) {
+        grid-area: box7;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(9) {
+        grid-area: box9;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(10) {
+        grid-area: box10;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(11) {
+        grid-area: box11;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(15) {
+        grid-area: box15;
+        display: none;
+    }
+
     #item__wrap3>div.black__img img {
         width: 494px;
         height: 471px;
     }
+
     #item__wrap3>div.noR {
         border-right: 1px solid #d6d6d6;
     }
@@ -360,12 +443,13 @@
         text-transform: uppercase;
     }
 }
-@media (max-width:735px){
+
+@media (max-width:735px) {
     #item__wrap3>div.black__img img {
         width: 430px;
         height: 471px;
     }
-  
+
 }
 
 @media (max-width: 650px) {
@@ -395,6 +479,52 @@
 
         font-family: 'ChosunNm';
     }
+
+    #item__wrap3>div:nth-child(2) {
+        grid-area: box2;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(3) {
+        grid-area: box3;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(5) {
+        grid-area: box5;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(6) {
+        grid-area: box6;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(7) {
+        grid-area: box7;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(9) {
+        grid-area: box9;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(10) {
+        grid-area: box10;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(11) {
+        grid-area: box11;
+        display: none;
+    }
+
+    #item__wrap3>div:nth-child(15) {
+        grid-area: box15;
+        display: none;
+    }
+
     #item__wrap3>div.title h2 {
         font-family: var(--main-gmark);
         font-size: 7vw;
@@ -403,7 +533,7 @@
         text-transform: uppercase;
         margin-top: 20px;
     }
-    
+
     #item__wrap3>div.home img {
         padding: 1vh 1.5vh 0 2vh;
         width: 100%;
@@ -417,9 +547,15 @@
         margin-top: 25px;
         margin-right: 20px;
     }
-    
+
+    #item__wrap3>div.black__img img {
+        width: 359px;
+        height: 418px;
+    }
+
 }
-@media (max-width:510px){
+
+@media (max-width:510px) {
     #item__wrap3>div.title h3 {
         font-family: var(--main-gmark);
         font-size: 20px;
@@ -427,17 +563,38 @@
         /* padding: 1vw 0vw 0vw 1vw; */
         text-transform: uppercase;
     }
+
     #item__wrap3>div.title .desc {
         font-size: 12px;
         line-height: 160%;
         text-transform: uppercase;
     }
+
+    #item__wrap3>div.icon img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    #item__wrap3>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 6vw;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+
 }
-@media (max-width:360px){
+
+@media (max-width:360px) {
     #item__wrap3>div.black__img img {
         width: 359px;
         height: 418px;
     }
+
     #item__wrap3>div.title h3 {
         font-family: var(--main-gmark);
         font-size: 17px;
@@ -445,6 +602,7 @@
         /* padding: 1vw 0vw 0vw 1vw; */
         text-transform: uppercase;
     }
+
     #item__wrap3>div.title .desc {
         font-size: 12px;
         line-height: 160%;
