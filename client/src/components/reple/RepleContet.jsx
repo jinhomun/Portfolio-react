@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react'
+import { FiMoreHorizontal } from "react-icons/fi";
 
 const RepleContet = (props) => {
     const [reple, setReple] = useState(props.reple.reple)
@@ -11,7 +12,7 @@ const RepleContet = (props) => {
 
     const SubmitHandler = (e) => {
         e.preventDefault();
-        const userPassword = prompt("댓글을 수정하려면 패스워드를 입력하세요.");
+        const userPassword = prompt("댓글을 수정하려면 패스워드를 입력하세요.😀");
 
         let body = {
             reple_id: props.reple._id,
@@ -34,15 +35,12 @@ const RepleContet = (props) => {
                         console.error("Updated reple is undefined or null.");
                     }
                 } else {
-                    if (response.status === 401) {
-                        alert("비밀번호가 일치하지 않습니다.");
-                    } else {
-                        alert("댓글 수정 실패했습니다.");
-                    }
+                    alert("댓글 수정 실패했습니다.");
                 }
             })
             .catch((error) => {
                 console.error("Error in SubmitHandler:", error);
+                alert("댓글 수정 중 오류가 발생했습니다."); // 실패할 때도 알림을 표시
             });
     };
 
@@ -81,11 +79,12 @@ const RepleContet = (props) => {
             <div className="comment__container">
                 <p className="name">작성자: {props.reple.displayName}</p>
                 <p className="text">댓글: {props.reple.reple} </p>
-                <span onClick={() => setModalFlag(true)}>...</span>
+                <span className="more-icon" onClick={() => setModalFlag(true)}><FiMoreHorizontal /></span>
                 {modalFlag && (
                     <div className='modal' ref={ref}>
                         <button className='edit' onClick={() => {
                             setEditFlag(true);
+                            setModalFlag(false);
                         }}>수정</button>
                         <button className='remove' onClick={(e) => DeleteHandler(e)}>삭제</button>
                     </div>

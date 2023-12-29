@@ -57,7 +57,7 @@ const RepleWrite = () => {
             <input
                 className="name-input"
                 placeholder="Password(4자리)"
-                text="text"
+                type="password"
                 value={password}
                 onChange={(e) => { setPassword(e.currentTarget.value) }}
             />
