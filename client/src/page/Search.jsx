@@ -175,10 +175,13 @@ const Search = () => {
         };
 
         // // Call the linkClickHandler function for each link with the correct destination
-        // linkClickHandler(".item.i1 .list a", "/gsap","/quiz","/search");
+        linkClickHandler(".item.i1 li:nth-child(1) a", "/gsap");
+        linkClickHandler(".item.i1 li:nth-child(2) a", "/quiz");
+        linkClickHandler(".item.i1 li:nth-child(3) a", "/search");
         linkClickHandler(".item.i3 a", "/");
         linkClickHandler(".item.i4 a", "/gsap");
-
+        linkClickHandler(".item.i15 a", "https://github.com/jinhomun/SearchEffect");
+        linkClickHandler(".item.i16 a", "https://jinhomun.github.io/webs2024/javascript/search/index.html");
         // ...
 
     }, []);
@@ -224,7 +227,8 @@ const Search = () => {
                         <p className="desc">
                             VSC | JavaScript<br />
                             HTML | CSS<br />
-                            JSON | Git
+                            JSON | Git<br />
+                            Canvas
                         </p>
                     </div>
                     <div className="item__bg"></div>
@@ -287,19 +291,23 @@ const Search = () => {
                 <div className="item i15 noB title">
                     <div className="item__inner">
                         <h3>code view</h3>
-                        <p className="desc">
-                            skill를 이용하여 만든 소스를
-                            깃을 통해 볼 수 있습니다.
-                        </p>
+                        <a href="https://github.com/jinhomun/SearchEffect">
+                            <p className="desc">
+                                skill를 이용하여 만든 소스를
+                                깃을 통해 볼 수 있습니다.
+                            </p>
+                        </a>
                     </div>
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i16 noR noB title">
                     <div className="item__inner">
                         <h3>site view</h3>
-                        <p className="desc">
-                            깃에 올린 파일을 직접 볼 수 있습니다.
-                        </p>
+                        <a href="https://jinhomun.github.io/webs2024/javascript/search/index.html">
+                            <p className="desc">
+                                깃에 올린 사이트를 직접 볼 수 있습니다.
+                            </p>
+                        </a>
                     </div>
                     <div className="item__bg"></div>
                 </div>

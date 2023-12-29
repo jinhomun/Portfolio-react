@@ -174,10 +174,13 @@ const Gsap = () => {
     };
 
     // // Call the linkClickHandler function for each link with the correct destination
-    // linkClickHandler(".item.i1 .list a", "/gsap","/quiz","/search");
+    linkClickHandler(".item.i1 li:nth-child(1) a", "/gsap");
+    linkClickHandler(".item.i1 li:nth-child(2) a", "/quiz");
+    linkClickHandler(".item.i1 li:nth-child(3) a", "/search");
     linkClickHandler(".item.i3 a", "/");
     linkClickHandler(".item.i4 a", "/quiz");
-
+    linkClickHandler(".item.i15 a", "https://github.com/jinhomun/GSAP-Parallax-Effect");
+    linkClickHandler(".item.i16 a", "https://jinhomun.github.io/webs2024/javascript/gsap/gsap01.html");
     // ...
 
   }, []);
@@ -281,7 +284,7 @@ const Gsap = () => {
         <div className="item i15 noB title">
           <div className="item__inner">
             <h3>code view</h3>
-            <a href="https://github.com/jinhomun/webs2024/tree/main/javascript/gsap">
+            <a href="https://github.com/jinhomun/GSAP-Parallax-Effect">
               <p className="desc">
                 skill를 이용하여 만든 소스를
                 깃을 통해 볼 수 있습니다.
@@ -293,9 +296,9 @@ const Gsap = () => {
         <div className="item i16 noR noB title">
           <div className="item__inner">
             <h3>site view</h3>
-            <a href="https://github.com/jinhomun/webs2024/tree/main/javascript/gsap">
+            <a href="https://jinhomun.github.io/webs2024/javascript/gsap/gsap01.html">
               <p className="desc">
-                깃에 올린 파일을 직접 볼 수 있습니다.
+                깃에 올린 사이트를 직접 볼 수 있습니다.
               </p>
             </a>
           </div>

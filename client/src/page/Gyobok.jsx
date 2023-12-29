@@ -181,7 +181,8 @@ const Gyobok = () => {
         linkClickHandler(".item.i1 li:nth-child(3) a", "/movie");
         linkClickHandler(".item.i3 a", "/");
         linkClickHandler(".item.i4 a", "/youtube");
-
+        linkClickHandler(".item.i15 a", "https://github.com/jinhomun/Gogyobok-site");
+        linkClickHandler(".item.i16 a", "https://github.com/jinhomun/Gogyobok-site");
         // ...
 
     }, []);
@@ -294,19 +295,23 @@ const Gyobok = () => {
                 <div className="item i15 noB title">
                     <div className="item__inner">
                         <h3>code view</h3>
-                        <p className="desc">
-                            skill를 이용하여 만든 소스를
-                            깃을 통해 볼 수 있습니다.
-                        </p>
+                        <a href="https://github.com/jinhomun/Gogyobok-site">
+                            <p className="desc">
+                                skill를 이용하여 만든 소스를
+                                깃을 통해 볼 수 있습니다.
+                            </p>
+                        </a>
                     </div>
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i16 noR noB title">
                     <div className="item__inner">
-                        <h3>site view</h3>
-                        <p className="desc">
-                            깃에 올린 파일을 직접 볼 수 있습니다.
-                        </p>
+                        <a href="https://github.com/jinhomun/Gogyobok-site">
+                            <h3>site view</h3>
+                            <p className="desc">
+                                깃에 올린 파일을 직접 볼 수 있습니다.
+                            </p>
+                        </a>
                     </div>
                     <div className="item__bg"></div>
                 </div>
