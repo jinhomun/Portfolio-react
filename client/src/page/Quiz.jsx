@@ -225,9 +225,7 @@ const Quiz = () => {
                     <div className="item__inner">
                         <h3>skill</h3>
                         <p className="desc">
-                            VSC | JavaScript <br />
-                            HTML | CSS <br />
-                            JSON | Git
+                            VSC와 JavaScript, HTML, CSS, JSON, Git를 활용.
                         </p>
                     </div>
                     <div className="item__bg"></div>

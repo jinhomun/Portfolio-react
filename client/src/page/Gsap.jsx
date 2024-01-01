@@ -226,9 +226,8 @@ const Gsap = () => {
           <div className="item__inner">
             <h3>skill</h3>
             <p className="desc">
-              VSC | JavaScript<br />
-              HTML | CSS<br />
-              gsap | Git</p>
+              VSC와 JavaScript, HTML, CSS, GSAP, Git를 활용.
+            </p>
           </div>
           <div className="item__bg"></div>
         </div>
