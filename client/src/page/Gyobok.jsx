@@ -2,9 +2,10 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgGyobok1 from '../assets/img/gyobok1-5.png'
-import imgGyobok2 from '../assets/img/gyobok2-1.png'
-import imgGyobok3 from '../assets/img/gyobok3-1.png'
+import imgGyobok1 from '../assets/img/gyobok1.png'
+import imgGyobok2 from '../assets/img/gyobok2.png'
+import imgGyobok3 from '../assets/img/gyobok3.png'
+import imgGyobok4 from '../assets/img/gyobok4.png'
 import SliderScript from '../assets/script/SliderScript'
 
 const Gyobok = () => {
@@ -218,7 +219,7 @@ const Gyobok = () => {
                 <div className="item i4 noR home">
                     <div className="item__inner">
                         <a href="/youtube">
-                            <p>YOUTUBE.S</p>
+                            <p>YOUTUBE</p>
                             <img src={arrow} alt="화살표"></img>
                         </a>
                     </div>
@@ -249,6 +250,9 @@ const Gyobok = () => {
                             </div>
                             <div className="slider">
                                 <img src={imgGyobok3} alt="gyobok03" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgGyobok4} alt="gyobok04" />
                             </div>
                         </div>
                     </div>

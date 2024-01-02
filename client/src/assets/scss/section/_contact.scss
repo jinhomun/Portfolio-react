@@ -96,7 +96,7 @@ body {
 
 #item__wrap4>div.title h2 {
     font-family: var(--main-gmark);
-    font-size: 5vw;
+    font-size: 100px;
     font-weight: bold;
     position: absolute;
     text-transform: uppercase;
@@ -129,14 +129,15 @@ body {
     font-family: var(--main-gmark);
     font-weight: 100;
     font-size: 40px;
-    float: right;
-    margin-top: 120px;
-    margin-right: 20px;
+    // float: right;
+    // margin-top: 120px;
+    // margin-right: 20px;
 }
 
 #item__wrap4>div.home img {
     padding: 1vh 1.5vh 0 3vh;
     width: 100%;
+    display: none;
 }
 
 #item__wrap4>div.comment {
@@ -282,10 +283,30 @@ body {
     cursor: pointer;
 }
 
+@media (max-width:1200px) {
+    #item__wrap4>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 90px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 72px;
+    }
+}
+@media (max-width:1085px) {
+    #item__wrap4>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 80px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 72px;
+    }
+}
 @media (max-width: 940px) {
     #item__wrap4>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 5vw;
+        font-size: 70px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -296,9 +317,7 @@ body {
         font-family: var(--main-gmark);
         font-weight: 100;
         font-size: 35px;
-        float: right;
-        margin-top: 120px;
-        margin-right: 20px;
+       
     }
 
     #item__wrap4>div.home img {
@@ -314,15 +333,32 @@ body {
     }
 
 }
-
+@media (max-width:860px) {
+    #item__wrap4>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 65px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 72px;
+    }
+}
 @media (max-width: 768px) {
+    #item__wrap4>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 55px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 72px;
+    }
     #item__wrap4>div.home p {
         font-family: var(--main-gmark);
         font-weight: 100;
         font-size: 30px;
-        float: right;
-        margin-top: 120px;
-        margin-right: 20px;
+        // float: right;
+        // margin-top: 120px;
+        // margin-right: 20px;
     }
 
     #item__wrap4>div.home img {
@@ -332,6 +368,14 @@ body {
 }
 
 @media (max-width: 670px) {
+    #item__wrap4>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 45px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 72px;
+    }
     #item__wrap4>div.commentinfo h3 {
         font-weight: bold;
         font-size: 20px;
@@ -465,7 +509,7 @@ body {
 
     #item__wrap4>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 7vw;
+        font-size: 55px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -484,13 +528,13 @@ body {
 
     #item__wrap4>div.commentinfo h3 {
         font-weight: bold;
-        font-size: 4vw;
+        font-size: 20px;
     }
 
     #item__wrap4>div.comment h3 {
         font-weight: bold;
         padding-bottom: 10px;
-        font-size: 4vw;
+        font-size: 20px;
     }
 
     #item__wrap4>div.home p {
@@ -498,8 +542,8 @@ body {
         font-weight: 100;
         font-size: 30px;
         float: right;
-        margin-top: 20px;
-        margin-right: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
     }
 
     #item__wrap4>div.home img {

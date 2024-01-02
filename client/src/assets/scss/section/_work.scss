@@ -174,7 +174,7 @@ body {
 
 #item__wrap2>div.title h2 {
     font-family: var(--main-gmark);
-    font-size: 5vw;
+    font-size: 100px;
     font-weight: bold;
     position: absolute;
     text-transform: uppercase;
@@ -239,19 +239,22 @@ body {
 #item__wrap2>div.home {
     padding: 14px;
 }
+#item__wrap2>div.home:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 #item__wrap2>div.home p {
     font-family: var(--main-gmark);
     font-weight: 100;
     font-size: 40px;
-    float: right;
-    margin-top: 120px;
-    margin-right: 20px;
+    
 }
 
 #item__wrap2>div.home img {
     padding: 1vh 1.5vh 0 3vh;
     width: 100%;
+    display: none;
 }
 
 #item__wrap2>div.skill {
@@ -287,20 +290,84 @@ body {
     /* padding: 1vw 2vw 1vw 1vw; */
     text-transform: uppercase;
 }
-
+@media(max-width:1660px) {
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 95px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }
+    
+}
+@media(max-width:1578px) {
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 90px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }
+    
+}
+@media(max-width:1578px) {
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 85px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }
+    
+}
+@media(max-width:1428px) {
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 80px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }
+    
+}
+@media(max-width:1335px) {
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 75px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }
+    
+}
 @media(max-width:1280px) {
     #item__wrap2>div.home p {
         font-family: var(--main-gmark);
         font-weight: 100;
-        font-size: 35px;
-        float: right;
-        margin-top: 120px;
-        margin-right: 20px;
+        font-size: 40px;
+        // float: right;
+        // margin-top: 120px;
+        // margin-right: 20px;
     }
 
-    #item__wrap2>div.home img {
-        padding: 1vh 1.5vh 0 2vh;
-        width: 100%;
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 70px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
     }
 }
 
@@ -323,15 +390,16 @@ body {
     #item__wrap2>div.home img {
         padding: 1vh 1.5vh 0 2vh;
         width: 100%;
+        display: none;
     }
 
     #item__wrap2>div.home p {
         font-family: var(--main-gmark);
         font-weight: 100;
-        font-size: 25px;
-        float: right;
-        margin-top: 120px;
-        margin-right: 20px;
+        font-size: 40px;
+        // float: right;
+        // margin-top: 120px;
+        // margin-right: 20px;
     }
 
     #item__wrap2>div.skill .desc {
@@ -341,8 +409,28 @@ body {
         line-height: 160%;
         text-transform: uppercase;
     }
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 65px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }
 }
-
+@media(max-width:1097px) {
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 50px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }
+    
+}
 @media(max-width:880px) {
     #item__wrap2 {
         display: grid;
@@ -409,12 +497,21 @@ body {
 
     #item__wrap2>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 5vw;
+        font-size: 60px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
         margin-top: 50px;
 
+    }
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 45px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
     }
 
     #item__wrap2>div.skill h3 {
@@ -438,10 +535,10 @@ body {
     #item__wrap2>div.home p {
         font-family: var(--main-gmark);
         font-weight: 100;
-        font-size: 20px;
-        float: right;
-        margin-top: 120px;
-        margin-right: 20px;
+        font-size: 32px;
+        // float: left;
+        // margin-top: 0px;
+        // margin-right:0px;
     }
 
     // .slider:nth-child(1) {
@@ -470,7 +567,7 @@ body {
     #item__wrap2>div.skill .desc {
         font-family: var(--main-chosun);
         font-weight: 100;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 160%;
         text-transform: uppercase;
     }
@@ -499,7 +596,15 @@ body {
     //     height: 476px;
     // }
 
-
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 40px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 70px;
+    
+    }    
 }
 
 @media (max-width: 660px) {
@@ -573,26 +678,32 @@ body {
 
     #item__wrap2>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 4vw;
+        font-size: 40px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
         margin-top: 2vw;
 
     }
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 32px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 2vw;
+    
+    }    
 
     #item__wrap2>div.home p {
         font-family: var(--main-gmark);
         font-weight: 100;
-        font-size: 4vw;
-        float: right;
-        margin-top: 4vw;
-        margin-right: 20px;
+        font-size: 30px;
     }
 
     #item__wrap2>div.skill h3 {
         font-family: var(--main-gmark);
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 100;
         text-transform: uppercase;
     }
@@ -600,21 +711,21 @@ body {
     #item__wrap2>div.skill .desc {
         font-family: var(--main-chosun);
         font-weight: 100;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 160%;
         text-transform: uppercase;
     }
 
     #item__wrap2>div.title h3 {
         font-family: var(--main-gmark);
-        font-size: 22px;
+        font-size: 30px;
         font-weight: 100;
         /* padding: 1vw 0vw 0vw 1vw; */
         text-transform: uppercase;
     }
 
     #item__wrap2>div.title .desc {
-        font-size: 15px;
+        font-size: 20px;
         line-height: 160%;
         /* padding: 1vw 2vw 1vw 1vw; */
         text-transform: uppercase;
@@ -640,8 +751,18 @@ body {
         object-fit: cover;
     }
 }
-
-@media (max-height:600px) {
+@media (max-width:550px) {
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 2vw;
+    
+    }   
+}
+@media (max-width: 500px) {
     #item__wrap2>div.black .desc {
         font-size: 14px;
         line-height: 160%;
@@ -650,15 +771,106 @@ body {
 
     #item__wrap2>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 3.5vw;
+        font-size: 40px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
         margin-top: 20px;
+    }
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 20px;
+    
+    }   
+    #item__wrap2>div.skill h3 {
+        font-family: var(--main-gmark);
+        font-size: 20px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    #item__wrap2>div.skill .desc {
+        font-family: var(--main-chosun);
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 160%;
+        text-transform: uppercase;
+    }
+    #item__wrap2>div.title h3 {
+        font-family: var(--main-gmark);
+        font-size: 20px;
+        font-weight: 100;
+        /* padding: 1vw 0vw 0vw 1vw; */
+        text-transform: uppercase;
+    }
+    #item__wrap2>div.title .desc {
+        font-size: 15px;
+        line-height: 160%;
+        /* padding: 1vw 2vw 1vw 1vw; */
+        text-transform: uppercase;
+    }
+
+
+    
+}
+@media (max-width: 440px) {
+    #item__wrap2 {
+        display: grid;
+        grid-template-areas:
+            "box1 box3"
+            "box7 box7"
+            "box7 box7"
+            "box7 box7"
+            "box9 box9"
+            "box9 box9"
+            "box9 box9"
+            "box5 box15"
+        ;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(8, 12.5vh);
+        font-family: 'ChosunNm';
+    }
+    #item__wrap2>div.black .desc {
+        font-size: 14px;
+        line-height: 160%;
+        padding: 14px;
+    }
+    #item__wrap2>div.title h2 {
+        font-family: var(--main-gmark);
+        font-size: 35px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 5px;
 
     }
-}
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 20px;
+    
+    }   
+    #item__wrap2>div.title .desc {
+        font-size: 13px;
+        line-height: 160%;
+        /* padding: 1vw 2vw 1vw 1vw; */
+        text-transform: uppercase;
+    }
+    #item__wrap2>div.skill .desc {
+        font-family: var(--main-chosun);
+        font-weight: 100;
+        font-size: 13px;
+        line-height: 160%;
+        text-transform: uppercase;
+    }
 
+}
 @media (max-width: 360px) {
     #item__wrap2>div.black .desc {
         font-size: 11px;
@@ -668,21 +880,28 @@ body {
 
     #item__wrap2>div.title h2 {
         font-family: var(--main-gmark);
-        font-size: 4vw;
+        font-size: 30px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
         margin-top: 15px;
 
     }
+    #item__wrap2>div.title .long {
+        font-family: var(--main-gmark);
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        margin-top: 7px;
+    
+    } 
 
     #item__wrap2>div.home p {
         font-family: var(--main-gmark);
         font-weight: 100;
-        font-size: 20px;
-        float: right;
-        margin-top: 28px;
-        margin-right: 20px;
+        font-size: 30px;
+        
     }
 
     #item__wrap2>div.black .desc {

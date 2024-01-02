@@ -247,12 +247,12 @@ const Quiz = () => {
                 <div className="item i9 black">
                     <div className="item__inner">
                         <p className="desc">
-                            JSON(JavaScript Object Notation)은 데이터를 표현하기 위한 경량의 데이터 교환 형식입니다. JSON은 사람이 읽고 쓰기 쉽고, 기계가 해석하고 생성하기도
-                            쉽습니다. 주로 웹 애플리케이션에서 데이터를 전송하거나 저장하기 위해 사용됩니다.<br />
+                            JSON(JavaScript Object Notation)은 데이터를 표현하기 위한 경량의 데이터 교환 형식입니다.<br />
+                            JSON은 사람이 읽고 쓰기 쉽고, 기계가 해석하고 생성하기도 쉽습니다. <br />
+                            주로 웹 애플리케이션에서 데이터를 전송하거나 저장하기 위해 사용됩니다.<br />
                             <br />
-                            정보처리 기능사, 웹디자인 기능사 필기 JSON 파일을 이용하여, 문제 정보와 정답을 불러와서<br />
-                            선택자: querySelector(), querySelectorAll() , 매서드 : innerHTML, classNameList <br />
-                            이벤트 : addEventListener() 를 이용해서 퀴즈를 만들었습니다<br />
+                            정보처리 기능사, 웹디자인 기능사 필기 JSON 파일을 이용하여, 문제 정보와 정답을 불러오고
+                            선택자: querySelector(), querySelectorAll() , 매서드 : innerHTML, classNameList 이벤트 : addEventListener() 를 이용해서 퀴즈를 만들었습니다<br />
                         </p>
                     </div>
                     <div className="item__bg"></div>

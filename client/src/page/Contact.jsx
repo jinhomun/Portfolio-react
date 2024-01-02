@@ -202,7 +202,7 @@ const Contact = () => {
             <div id="item__wrap4" className="fixed">
                 <div className="item i1 black title">
                     <div className="item__inner">
-                        <h2>Contact me</h2>
+                        <h2>Contact</h2>
                     </div>
                     <div className="item__bg"></div>
                 </div>
