@@ -236,24 +236,18 @@ const Movie = () => {
                     <div className="item__inner"></div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i7">
+                <div className="item i7 img">
                     <div className="item__inner">
                         <SliderScript />
                         <div className="sliderWrap">
                             <div className="slider">
-                                <a href="/">
-                                    <img src={imgMovie1} alt="movie01" />
-                                </a>
+                                <img src={imgMovie1} alt="movie01" />
                             </div>
                             <div className="slider">
-                                <a href="/">
-                                    <img src={imgMovie2} alt="movie02" />
-                                </a>
+                                <img src={imgMovie2} alt="movie02" />
                             </div>
                             <div className="slider">
-                                <a href="/">
-                                    <img src={imgMovie3} alt="movie03" />
-                                </a>
+                                <img src={imgMovie3} alt="movie03" />
                             </div>
                         </div>
                     </div>
