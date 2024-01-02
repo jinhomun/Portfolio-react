@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgSearch1 from '../assets/img/search1-1.png'
-import imgSearch2 from '../assets/img/search1-2.png'
+import imgSearch1 from '../assets/img/search1.png'
+import imgSearch2 from '../assets/img/search2.png'
 import SliderScript from '../assets/script/SliderScript';
 
 const Search = () => {

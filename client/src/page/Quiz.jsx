@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgQuiz from '../assets/img/quiz.png'
+import imgQuiz from '../assets/img/quiz1.png'
 
 
 const Quiz = () => {
