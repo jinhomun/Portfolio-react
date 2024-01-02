@@ -8,6 +8,8 @@ import imgGyobok3 from '../assets/img/gyobok3-1.png'
 import SliderScript from '../assets/script/SliderScript'
 
 const Gyobok = () => {
+
+
     useEffect(() => {
 
         gsap.set(".item.i1 .item__inner", {
