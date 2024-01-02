@@ -79,7 +79,14 @@
 #item__wrap2>div:nth-child(16) {
     grid-area: box16;
 }
-
+#item__wrap2>div:nth-child(15):hover {
+    background-color: #000;
+    color: #fff;
+}
+#item__wrap2>div:nth-child(16):hover {
+    background-color: #000;
+    color: #fff;
+}
 #item__wrap2>div {
     border-bottom: 1px solid #d6d6d6;
     border-right: 1px solid #d6d6d6;
@@ -567,7 +574,7 @@ body {
     #item__wrap2>div.skill .desc {
         font-family: var(--main-chosun);
         font-weight: 100;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 160%;
         text-transform: uppercase;
     }
@@ -731,7 +738,9 @@ body {
         text-transform: uppercase;
     }
 
-
+    .item .noB title:hover {
+        background-color: #000;
+    }
 
     #item__wrap2>div.black .desc {
         font-size: 15px;
@@ -795,7 +804,7 @@ body {
     #item__wrap2>div.skill .desc {
         font-family: var(--main-chosun);
         font-weight: 100;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 160%;
         text-transform: uppercase;
     }
@@ -807,7 +816,7 @@ body {
         text-transform: uppercase;
     }
     #item__wrap2>div.title .desc {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 160%;
         /* padding: 1vw 2vw 1vw 1vw; */
         text-transform: uppercase;
