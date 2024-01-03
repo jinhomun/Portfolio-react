@@ -146,6 +146,7 @@ body {
 
 #item__wrap>div.black__me img {
     width: 240px;
+    object-fit: cover;
 }
 
 #item__wrap>div.title {
@@ -409,7 +410,8 @@ body {
 
     #item__wrap>div.black__me img {
         width: 223px;
-        height: 243px;
+        height: 240px;
+        object-fit: cover;
     }
 
 }
@@ -436,6 +438,7 @@ body {
     #item__wrap>div.black__me img {
         width: 223px;
         height: 237px;
+        object-fit: cover;
     }
 }
 
@@ -606,7 +609,7 @@ body {
     }
 
     #item__wrap>div.black .desc {
-        font-size: 17px;
+        font-size: 19px;
         line-height: 160%;
     }
 
@@ -642,6 +645,7 @@ body {
     #item__wrap>div.black__me img {
         width: 100%;
         height: 20vh;
+        object-fit: cover;
     }
 
 }
