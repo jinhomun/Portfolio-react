@@ -191,7 +191,7 @@ const Contact = () => {
 
         // ...
 
-        linkClickHandler("#item__wrap4 .item.i4 a", "/");
+        linkClickHandler("#item__wrap4 .item.i4", "/");
         linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(1)", "/contact");
         linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(2)", "https://github.com/jinhomun");
         linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com");
@@ -229,12 +229,12 @@ const Contact = () => {
                     </div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i4 home">
+                <div className="item i4 home" href="/">
                     <div className="item__inner">
-                        <a href="/">
+                       
                             <p>HOME</p>
                             <img src={arrow} alt="화살표"></img>
-                        </a>
+                        
                     </div>
                     <div className="item__bg"></div>
                 </div>

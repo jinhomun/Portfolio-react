@@ -83,7 +83,15 @@ body {
 #item__wrap>div:nth-child(16) {
     grid-area: box16;
 }
+#item__wrap>div:nth-child(15):hover {
+    background-color: #000;
+    color: #fff;
+}
 
+#item__wrap>div:nth-child(16):hover {
+    background-color: #000;
+    color: #fff;
+}
 .item {
     position: relative;
 }

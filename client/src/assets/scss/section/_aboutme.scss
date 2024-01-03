@@ -92,7 +92,10 @@ body {
 #item__wrap3>div:nth-child(16) {
     grid-area: box16;
 }
-
+#item__wrap3>div:nth-child(14):hover {
+    background-color: #000;
+    color: #fff;
+}
 #item__wrap3>div {
     border-bottom: 1px solid #d6d6d6;
     border-right: 1px solid #d6d6d6;

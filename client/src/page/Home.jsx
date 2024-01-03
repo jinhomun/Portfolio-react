@@ -220,8 +220,8 @@ const Home = () => {
         linkClickHandler(".item.i9 .list li:nth-child(2) a", "/youtube");
         linkClickHandler(".item.i9 .list li:nth-child(3) a", "/movie");
 
-        linkClickHandler(".item.i15 a", "/aboutme");
-        linkClickHandler(".item.i16 a", "/contact");
+        linkClickHandler(".item.i15", "/aboutme");
+        linkClickHandler(".item.i16", "/contact");
     }, []);
 
 
@@ -355,25 +355,25 @@ const Home = () => {
                     </div>
                     <div className='item__bg'></div>
                 </div>
-                <div className="item i15 noB title">
+                <div className="item i15 noB title" href="/aboutme">
                     <div className="item__inner">
-                        <a href="/aboutme">
+                        
                             <h3>ABOUT ME</h3>
                             <p className="desc">
                                 안녕하세요!<br />
                                 저는 열정적이고 창의적인 프론트엔드 개발자 문진호 입니다</p>
-                        </a>
+                        
 
                     </div>
                     <div className='item__bg'></div>
                 </div>
-                <div className="item i16 noR noB">
+                <div className="item i16 noR noB" href="/contact">
                     <div className="item__inner">
-                        <a href="/contact">
+                      
                             <h3>CONTACT ME</h3>
                             <p className="desc"></p>
 
-                        </a>
+                      
 
                     </div>
                     <div className='item__bg'></div>

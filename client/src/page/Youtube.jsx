@@ -159,29 +159,33 @@ const Youtube = () => {
             y: 0
         });
 
-        const linkClickHandler = (linkSelector, destination) => {
+        const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
             document.querySelector(linkSelector).addEventListener('click', (event) => {
-                event.preventDefault(); // Prevent the default behavior of the link
-
-                gsap.to(".item__bg", {
-                    height: "100%",
-                    ease: "power3.inOut",
-                    onComplete: () => {
-                        // Navigate to the link after the animation completes
-                        window.location.href = destination;
-                    },
-                });
+              event.preventDefault(); // 링크의 기본 동작 방지
+          
+              gsap.to(".item__bg", {
+                height: "100%",
+                ease: "power3.inOut",
+                onComplete: () => {
+                  // 애니메이션이 완료된 후 링크로 이동
+                  if (새창여부) {
+                    window.open(destination, '_blank'); // 새 창에서 링크 열기
+                  } else {
+                    window.location.href = destination; // 현재 창에서 링크 열기
+                  }
+                },
+              });
             });
-        };
+          };
 
         // // Call the linkClickHandler function for each link with the correct destination
         linkClickHandler(".item.i1 li:nth-child(1) a", "/gyobok");
         linkClickHandler(".item.i1 li:nth-child(2) a", "/youtube");
         linkClickHandler(".item.i1 li:nth-child(3) a", "/movie");
-        linkClickHandler(".item.i3 a", "/");
-        linkClickHandler(".item.i4 a", "/movie");
-        linkClickHandler(".item.i15 a", "https://github.com/jinhomun/SoccerYoutube-site");
-        linkClickHandler(".item.i16 a", "https://youtube-project2023-jinhomun.netlify.app/");
+        linkClickHandler(".item.i3", "/");
+        linkClickHandler(".item.i4", "/movie");
+        linkClickHandler(".item.i15", "https://github.com/jinhomun/SoccerYoutube-site",true);
+        linkClickHandler(".item.i16", "https://youtube-project2023-jinhomun.netlify.app/",true);
         // ...
 
     }, []);
@@ -203,21 +207,21 @@ const Youtube = () => {
                     <div className="item__inner"></div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i3 home">
+                <div className="item i3 home" href="/">
                     <div className="item__inner">
-                        <a href="/">
+                        
                             <p>HOME</p>
                             <img src={arrow} alt="화살표"></img>
-                        </a>
+                        
                     </div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i4 noR home">
+                <div className="item i4 noR home" href="/movie">
                     <div className="item__inner">
-                        <a href="/movie">
+                       
                             <p>MOVIE.S</p>
                             <img src={arrow} alt="화살표"></img>
-                        </a>
+                        
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -277,8 +281,8 @@ const Youtube = () => {
                     <div className="item__inner"></div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i15 noB title">
-                    <a href="https://github.com/jinhomun/SoccerYoutube-site">
+                <div className="item i15 noB title" href="https://github.com/jinhomun/SoccerYoutube-site">
+                   
                         <div className="item__inner">
                             <h3>code view</h3>
 
@@ -288,18 +292,18 @@ const Youtube = () => {
                             </p>
 
                         </div>
-                    </a>
+                   
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i16 noR noB title">
-                    <a href="https://youtube-project2023-jinhomun.netlify.app/">
+                <div className="item i16 noR noB title"  href="https://youtube-project2023-jinhomun.netlify.app/">
+                    
                         <div className="item__inner">
                             <h3>site view</h3>
                             <p className="desc">
                                 netrify에 올린 파일을 직접 볼 수 있습니다.
                             </p>
                         </div>
-                    </a>
+                  
                     <div className="item__bg"></div>
                 </div>
             </div>

@@ -173,7 +173,8 @@ const Aboutme = () => {
 
         // ...
 
-        linkClickHandler("#item__wrap3 .item.i4 a", "/");
+        linkClickHandler("#item__wrap3 .item.i4", "/");
+        linkClickHandler("#item__wrap3 .item.i14", "/contact");
         linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(1)", "/contact");
         linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(2)", "https://github.com/jinhomun");
         linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com");
@@ -197,12 +198,12 @@ const Aboutme = () => {
                     <div className="item__inner"></div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i4 noR home">
+                <div className="item i4 noR home" href="/">
                     <div className="item__inner">
-                        <a href="/">
+                       
                             <p>HOME</p>
                             <img src={arrow} alt="화살표"></img>
-                        </a>
+                       
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -269,13 +270,13 @@ const Aboutme = () => {
                     </div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i14 noB title">
+                <div className="item i14 noB title" href="/contact">
                     <div className="item__inner">
-                        <a className="pageLink" href="contact.html">
+                        
                             <h3>CONTACT ME</h3>
                             <p className="desc">안녕하세요!
                                 저는 열정적이고 창의적인 프론트엔드 개발자 문진호 입니다.</p>
-                        </a>
+                        
                     </div>
                     <div className="item__bg"></div>
                 </div>
