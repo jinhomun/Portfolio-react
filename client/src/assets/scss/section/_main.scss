@@ -530,10 +530,10 @@ body {
             "box6"
             "box9"
             "box9"
-            "box11"
-            "box11"
             "box15"
             "box15"
+            "box12"
+            "box12"
             "box16"
             "box16"
         ;
@@ -566,10 +566,14 @@ body {
         grid-area: box10;
         display: none;
     }
+    #item__wrap>div:nth-child(11) {
+        grid-area: box10;
+        display: none;
+    }
 
     #item__wrap>div:nth-child(12) {
         grid-area: box12;
-        display: none;
+        display: block;
     }
 
     #item__wrap>div:nth-child(13) {
