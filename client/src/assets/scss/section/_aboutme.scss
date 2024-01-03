@@ -176,10 +176,12 @@ body {
 #item__wrap3>div.home {
     padding: 14px;
 }
+
 #item__wrap3>div.home:hover {
     background-color: #000;
     color: #fff;
 }
+
 #item__wrap3>div.home p {
     font-family: var(--main-gmark);
     font-weight: 100;
@@ -594,7 +596,7 @@ body {
     }
 
     #item__wrap3>div.title .desc {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 160%;
         text-transform: uppercase;
     }
@@ -612,11 +614,12 @@ body {
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
 
 }
+
 @media(max-width:420px) {
     #item__wrap3>div.title .desc {
         font-size: 13px;
@@ -624,6 +627,7 @@ body {
         text-transform: uppercase;
     }
 }
+
 @media (max-width:360px) {
     #item__wrap3>div.black__img img {
         width: 359px;
