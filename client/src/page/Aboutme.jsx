@@ -8,6 +8,8 @@ import github from '../assets/img/github.svg'
 import mail from '../assets/img/mail.svg'
 import comment from '../assets/img/comment.svg'
 
+import "../assets/scss/section/_aboutme.scss"
+
 const Aboutme = () => {
     useEffect(() => {
 

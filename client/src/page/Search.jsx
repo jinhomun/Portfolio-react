@@ -6,6 +6,8 @@ import imgSearch1 from '../assets/img/search1.png'
 import imgSearch2 from '../assets/img/search2.png'
 import SliderScript from '../assets/script/SliderScript';
 
+import "../assets/scss/section/_work.scss"
+
 const Search = () => {
     useEffect(() => {
 

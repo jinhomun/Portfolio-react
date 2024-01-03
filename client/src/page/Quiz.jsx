@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import arrow from '../assets/img/Arrow11.svg'
 import imgQuiz from '../assets/img/quiz1.png'
 
+import "../assets/scss/section/_work.scss"
+
 
 const Quiz = () => {
     useEffect(() => {

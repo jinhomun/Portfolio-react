@@ -9,6 +9,8 @@ import mail from '../assets/img/mail.svg'
 import comment from '../assets/img/comment.svg'
 import arrow from '../assets/img/Arrow11.svg'
 
+import "../assets/scss/section/_contact.scss"
+
 const Contact = () => {
     useEffect(() => {
         const hideScrollbar = () => {

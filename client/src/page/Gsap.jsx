@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import arrow from '../assets/img/Arrow11.svg'
 import imgGsap from '../assets/img/gsap1-1.png'
 
+import "../assets/scss/section/_work.scss"
+
 const Gsap = () => {
 
   useEffect(() => {

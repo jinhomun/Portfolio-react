@@ -293,6 +293,7 @@ body {
         margin-top: 72px;
     }
 }
+
 @media (max-width:1085px) {
     #item__wrap4>div.title h2 {
         font-family: var(--main-gmark);
@@ -303,6 +304,7 @@ body {
         margin-top: 72px;
     }
 }
+
 @media (max-width: 940px) {
     #item__wrap4>div.title h2 {
         font-family: var(--main-gmark);
@@ -317,7 +319,7 @@ body {
         font-family: var(--main-gmark);
         font-weight: 100;
         font-size: 35px;
-       
+
     }
 
     #item__wrap4>div.home img {
@@ -333,6 +335,7 @@ body {
     }
 
 }
+
 @media (max-width:860px) {
     #item__wrap4>div.title h2 {
         font-family: var(--main-gmark);
@@ -343,6 +346,7 @@ body {
         margin-top: 72px;
     }
 }
+
 @media (max-width: 768px) {
     #item__wrap4>div.title h2 {
         font-family: var(--main-gmark);
@@ -352,6 +356,7 @@ body {
         text-transform: uppercase;
         margin-top: 72px;
     }
+
     #item__wrap4>div.home p {
         font-family: var(--main-gmark);
         font-weight: 100;
@@ -376,6 +381,7 @@ body {
         text-transform: uppercase;
         margin-top: 72px;
     }
+
     #item__wrap4>div.commentinfo h3 {
         font-weight: bold;
         font-size: 20px;
@@ -436,20 +442,35 @@ body {
 
     #item__wrap4 {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(8, 12.5vh);
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(16, 10vh);
         grid-template-areas:
-            "box1 box1"
-            "box5 box5"
-            "box5 box5"
-            "box5 box5"
-            "box7 box7"
-            "box7 box7"
-            "box7 box7"
-            "box4 box3"
+            "box1"
+            "box1"
+            "box5"
+            "box5"
+            "box5"
+            "box5"
+            "box5"
+            "box5"
+            "box7"
+            "box7"
+            "box7"
+            "box7"
+            "box4"
+            "box4"
+            "box3"
+            "box3"
         ;
 
         font-family: 'ChosunNm';
+    }
+
+    body {
+        overflow-x: auto;
+        /* Enable horizontal scrollbar if needed */
+        overflow-y: visible;
+        /* Enable vertical scrollbar if needed */
     }
 
     #item__wrap4>div:nth-child(2) {

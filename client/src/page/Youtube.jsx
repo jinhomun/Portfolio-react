@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import arrow from '../assets/img/Arrow11.svg'
 import imgYoutube from '../assets/img/youtube1.png'
 
+import "../assets/scss/section/_work.scss"
+
 const Youtube = () => {
     useEffect(() => {
 
@@ -276,17 +278,17 @@ const Youtube = () => {
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i15 noB title">
-                        <a href="https://github.com/jinhomun/SoccerYoutube-site">
-                            <div className="item__inner">
-                                <h3>code view</h3>
-                            
-                                    <p className="desc">
-                                        skill를 이용하여 만든 소스를
-                                        깃을 통해 볼 수 있습니다.
-                                    </p>
-                                
-                            </div>
-                        </a>
+                    <a href="https://github.com/jinhomun/SoccerYoutube-site">
+                        <div className="item__inner">
+                            <h3>code view</h3>
+
+                            <p className="desc">
+                                skill를 이용하여 만든 소스를
+                                깃을 통해 볼 수 있습니다.
+                            </p>
+
+                        </div>
+                    </a>
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i16 noR noB title">

@@ -8,6 +8,8 @@ import imgGyobok3 from '../assets/img/gyobok3.png'
 import imgGyobok4 from '../assets/img/gyobok4.png'
 import SliderScript from '../assets/script/SliderScript'
 
+import "../assets/scss/section/_work.scss"
+
 const Gyobok = () => {
 
 

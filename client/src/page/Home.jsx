@@ -3,6 +3,7 @@ import gsap from 'gsap'
 // img
 import imgME from '../assets/img/about1.png'
 import KOR from '../assets/img/KOR.png'
+import '../assets/scss/section/_main.scss'
 
 
 

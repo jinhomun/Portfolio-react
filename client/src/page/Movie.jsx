@@ -7,6 +7,8 @@ import imgMovie2 from '../assets/img/movie2.png'
 import imgMovie3 from '../assets/img/movie3.png'
 import SliderScript from '../assets/script/SliderScript'
 
+import "../assets/scss/section/_work.scss"
+
 const Movie = () => {
     useEffect(() => {
 
