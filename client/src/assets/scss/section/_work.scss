@@ -50,6 +50,7 @@
 
 #item__wrap2>div:nth-child(9) {
     grid-area: box9;
+
 }
 
 #item__wrap2>div:nth-child(10) {
@@ -143,26 +144,6 @@ body {
     object-fit: cover;
 }
 
-// .slider:nth-child(1) {
-//     background-image: url(../../img/gyobok1-5.png);
-//     width: 961px;
-//     height: 480px;
-// }
-
-// .slider:nth-child(2) {
-//     background-image: url(../../img/gyobok2-1.png);
-//     width: 961px;
-//     height: 480px;
-// }
-
-// .slider:nth-child(3) {
-//     background-image: url(../../img/gyobok3-1.png);
-//     width: 961px;
-//     height: 480px;
-// }
-
-
-
 #item__wrap2>div.black {
     background-color: #000;
     color: #fff;
@@ -170,6 +151,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.list {
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+.hljs {
+    font-family: var(--main-chosun);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #item__wrap2>div.black .desc {
@@ -185,6 +177,16 @@ body {
 #item__wrap2>div.title h2 {
     font-family: var(--main-gmark);
     font-size: 100px;
+    font-weight: bold;
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: 70px;
+
+}
+
+#item__wrap2>div.title .long {
+    font-family: var(--main-gmark);
+    font-size: 90px;
     font-weight: bold;
     position: absolute;
     text-transform: uppercase;
@@ -305,7 +307,7 @@ body {
 @media(max-width:1660px) {
     #item__wrap2>div.title .long {
         font-family: var(--main-gmark);
-        font-size: 95px;
+        font-size: 90px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -331,7 +333,7 @@ body {
 @media(max-width:1578px) {
     #item__wrap2>div.title .long {
         font-family: var(--main-gmark);
-        font-size: 85px;
+        font-size: 80px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -344,7 +346,7 @@ body {
 @media(max-width:1428px) {
     #item__wrap2>div.title .long {
         font-family: var(--main-gmark);
-        font-size: 80px;
+        font-size: 75px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -357,7 +359,7 @@ body {
 @media(max-width:1335px) {
     #item__wrap2>div.title .long {
         font-family: var(--main-gmark);
-        font-size: 75px;
+        font-size: 70px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -379,7 +381,7 @@ body {
 
     #item__wrap2>div.title .long {
         font-family: var(--main-gmark);
-        font-size: 70px;
+        font-size: 65px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -429,7 +431,7 @@ body {
 
     #item__wrap2>div.title .long {
         font-family: var(--main-gmark);
-        font-size: 65px;
+        font-size: 60px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -455,10 +457,10 @@ body {
     #item__wrap2 {
         display: grid;
         grid-template-areas:
-            "box1 box9 box9"
+            "box1 box15 box5"
             "box7 box7 box7"
             "box7 box7 box7"
-            "box15 box5 box3"
+            "box9 box9 box3"
         ;
         grid-template-columns: repeat(3, 33.3%);
         grid-template-rows: repeat(4, 25vh);
@@ -527,7 +529,7 @@ body {
 
     #item__wrap2>div.title .long {
         font-family: var(--main-gmark);
-        font-size: 45px;
+        font-size: 40px;
         font-weight: bold;
         position: absolute;
         text-transform: uppercase;
@@ -546,6 +548,12 @@ body {
         font-size: 14px;
         line-height: 160%;
         padding: 14px;
+    }
+
+    .hljs {
+        font-family: var(--main-chosun);
+        font-weight: bold;
+        font-size: 14px;
     }
 
     #item__wrap2>div.home img {
@@ -597,6 +605,12 @@ body {
         font-size: 14px;
         line-height: 160%;
         padding: 14px;
+    }
+
+    .hljs {
+        font-family: var(--main-chosun);
+        font-weight: bold;
+        font-size: 14px;
     }
 
     // .slider:nth-child(1) {
@@ -784,6 +798,12 @@ body {
         padding: 14px;
     }
 
+    .hljs {
+        font-family: var(--main-chosun);
+        font-weight: bold;
+        font-size: 17px;
+    }
+
     .item .slider img {
         width: 100%;
         height: 40vh;
@@ -802,5 +822,11 @@ body {
         font-size: 12px;
         line-height: 160%;
         padding: 14px;
+    }
+
+    .hljs {
+        font-family: var(--main-chosun);
+        font-weight: bold;
+        font-size: 12px;
     }
 }

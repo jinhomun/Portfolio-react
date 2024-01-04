@@ -83,6 +83,7 @@ body {
 #item__wrap>div:nth-child(16) {
     grid-area: box16;
 }
+
 #item__wrap>div:nth-child(15):hover {
     background-color: #000;
     color: #fff;
@@ -92,6 +93,7 @@ body {
     background-color: #000;
     color: #fff;
 }
+
 .item {
     position: relative;
 }
@@ -195,6 +197,8 @@ body {
 
 #item__wrap .list {
     margin-top: 10px;
+    overflow-y: hidden;
+
 }
 
 #item__wrap .list ul li {
@@ -574,6 +578,7 @@ body {
         grid-area: box10;
         display: none;
     }
+
     #item__wrap>div:nth-child(11) {
         grid-area: box10;
         display: none;
@@ -741,5 +746,5 @@ body {
         margin-top: 3px;
     }
 
-    
+
 }
