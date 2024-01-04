@@ -2,9 +2,11 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgYoutube from '../assets/img/youtube1.png'
+import imgYoutube1 from '../assets/img/youtube1.png'
+import imgYoutube2 from '../assets/img/youtube2.png'
 
 import "../assets/scss/section/_work.scss"
+import SliderScript from '../assets/script/SliderScript';
 
 const Youtube = () => {
     useEffect(() => {
@@ -161,22 +163,22 @@ const Youtube = () => {
 
         const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
             document.querySelector(linkSelector).addEventListener('click', (event) => {
-              event.preventDefault(); // 링크의 기본 동작 방지
-          
-              gsap.to(".item__bg", {
-                height: "100%",
-                ease: "power3.inOut",
-                onComplete: () => {
-                  // 애니메이션이 완료된 후 링크로 이동
-                  if (새창여부) {
-                    window.open(destination, '_blank'); // 새 창에서 링크 열기
-                  } else {
-                    window.location.href = destination; // 현재 창에서 링크 열기
-                  }
-                },
-              });
+                event.preventDefault(); // 링크의 기본 동작 방지
+
+                gsap.to(".item__bg", {
+                    height: "100%",
+                    ease: "power3.inOut",
+                    onComplete: () => {
+                        // 애니메이션이 완료된 후 링크로 이동
+                        if (새창여부) {
+                            window.open(destination, '_blank'); // 새 창에서 링크 열기
+                        } else {
+                            window.location.href = destination; // 현재 창에서 링크 열기
+                        }
+                    },
+                });
             });
-          };
+        };
 
         // // Call the linkClickHandler function for each link with the correct destination
         linkClickHandler(".item.i1 li:nth-child(1) a", "/gyobok");
@@ -184,8 +186,8 @@ const Youtube = () => {
         linkClickHandler(".item.i1 li:nth-child(3) a", "/movie");
         linkClickHandler(".item.i3", "/");
         linkClickHandler(".item.i4", "/movie");
-        linkClickHandler(".item.i15", "https://github.com/jinhomun/SoccerYoutube-site",true);
-        linkClickHandler(".item.i16", "https://youtube-project2023-jinhomun.netlify.app/",true);
+        linkClickHandler(".item.i15", "https://github.com/jinhomun/SoccerYoutube-site", true);
+        linkClickHandler(".item.i16", "https://youtube-project2023-jinhomun.netlify.app/", true);
         // ...
 
     }, []);
@@ -209,19 +211,19 @@ const Youtube = () => {
                 </div>
                 <div className="item i3 home" href="/">
                     <div className="item__inner">
-                        
-                            <p>HOME</p>
-                            <img src={arrow} alt="화살표"></img>
-                        
+
+                        <p>HOME</p>
+                        <img src={arrow} alt="화살표"></img>
+
                     </div>
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i4 noR home" href="/movie">
                     <div className="item__inner">
-                       
-                            <p>MOVIE.S</p>
-                            <img src={arrow} alt="화살표"></img>
-                        
+
+                        <p>MOVIE.S</p>
+                        <img src={arrow} alt="화살표"></img>
+
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -241,7 +243,15 @@ const Youtube = () => {
                 </div>
                 <div className="item i7 noR img">
                     <div className="item__inner">
-                        <img src={imgYoutube} alt="youtube01" />
+                        <SliderScript />
+                        <div className="sliderWrap">
+                            <div className="slider">
+                                <img src={imgYoutube1} alt="youtube01" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgYoutube2} alt="youtube02" />
+                            </div>
+                        </div>
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -282,28 +292,28 @@ const Youtube = () => {
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i15 noB title" href="https://github.com/jinhomun/SoccerYoutube-site">
-                   
-                        <div className="item__inner">
-                            <h3>code view</h3>
 
-                            <p className="desc">
-                                skill를 이용하여 만든 소스를
-                                깃을 통해 볼 수 있습니다.
-                            </p>
+                    <div className="item__inner">
+                        <h3>code view</h3>
 
-                        </div>
-                   
+                        <p className="desc">
+                            skill를 이용하여 만든 소스를
+                            깃을 통해 볼 수 있습니다.
+                        </p>
+
+                    </div>
+
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i16 noR noB title"  href="https://youtube-project2023-jinhomun.netlify.app/">
-                    
-                        <div className="item__inner">
-                            <h3>site view</h3>
-                            <p className="desc">
-                                netrify에 올린 파일을 직접 볼 수 있습니다.
-                            </p>
-                        </div>
-                  
+                <div className="item i16 noR noB title" href="https://youtube-project2023-jinhomun.netlify.app/">
+
+                    <div className="item__inner">
+                        <h3>site view</h3>
+                        <p className="desc">
+                            netrify에 올린 파일을 직접 볼 수 있습니다.
+                        </p>
+                    </div>
+
                     <div className="item__bg"></div>
                 </div>
             </div>
