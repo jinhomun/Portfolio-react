@@ -6,8 +6,9 @@ import imgMovie1 from '../assets/img/movie1.png'
 import imgMovie2 from '../assets/img/movie2.png'
 import imgMovie3 from '../assets/img/movie3.png'
 import SliderScript from '../assets/script/SliderScript'
-
+import Moviedesc from '../components/desc/Moviedesc'
 import "../assets/scss/section/_work.scss"
+
 
 const Movie = () => {
     useEffect(() => {
@@ -264,14 +265,7 @@ const Movie = () => {
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i9 black">
-                    <div className="item__inner">
-                        <p className="desc">
-                            vue.js를 이용해서 ON MOVIE라는 사이트를 만들었습니다.<br />
-                            ON movie는 영화 팬들을 위한 완벽한 플랫폼입니다.<br />
-                            우리는 수많은 영화 데이터베이스를 통합하여 여러 소스의 정보를 한 곳에서 손쉽게 찾아볼 수 있게 했습니다.<br />
-                            최신 영화 소식, 평점, 리뷰, 예고편, 그리고 더 많은 콘텐츠를 여기서 만나보세요!<br />
-                        </p>
-                    </div>
+                    <Moviedesc />
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i10 noB">
