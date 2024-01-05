@@ -163,7 +163,7 @@ const Gsap = () => {
     const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
       document.querySelector(linkSelector).addEventListener('click', (event) => {
         event.preventDefault(); // 링크의 기본 동작 방지
-    
+
         gsap.to(".item__bg", {
           height: "100%",
           ease: "power3.inOut",
@@ -178,7 +178,7 @@ const Gsap = () => {
         });
       });
     };
-    
+
     // 각 링크에 대해 함수 호출하여 목적지 설정
     linkClickHandler(".item.i1 li:nth-child(1) a", "/gsap");
     linkClickHandler(".item.i1 li:nth-child(2) a", "/quiz");
@@ -194,13 +194,11 @@ const Gsap = () => {
       <div id="item__wrap2" class="fixed">
         <div className="item i1 title">
           <div className="item__inner">
-            <div className="list">
-              <ul>
-                <li className="active"><a href="/gsap">1</a></li>
-                <li><a href="/quiz">2</a></li>
-                <li><a href="/search">3</a></li>
-              </ul>
-            </div>
+            <ul>
+              <li className="active"><a href="/gsap">1</a></li>
+              <li><a href="/quiz">2</a></li>
+              <li><a href="/search">3</a></li>
+            </ul>
             <h2>gsap</h2>
           </div>
           <div className='item__bg'></div>
@@ -211,19 +209,19 @@ const Gsap = () => {
         </div>
         <div className="item i3 home" href="/">
           <div className="item__inner">
-           
-              <p>HOME</p>
-              <img src={arrow} alt="화살표"></img>
-            
+
+            <p>HOME</p>
+            <img src={arrow} alt="화살표"></img>
+
           </div>
           <div className="item__bg"></div>
         </div>
         <div className="item i4 noR home" href="quiz">
           <div className="item__inner">
-            
-              <p>QUIZ</p>
-              <img src={arrow} alt="화살표"></img>
-            
+
+            <p>QUIZ</p>
+            <img src={arrow} alt="화살표"></img>
+
           </div>
           <div className="item__bg"></div>
         </div>
@@ -286,28 +284,28 @@ const Gsap = () => {
           <div className="item__bg"></div>
         </div>
         <div className="item i15 noB title" href="https://github.com/jinhomun/GSAP-Parallax-Effect">
-          
-              <div className="item__inner">
-                <h3>code view</h3>
-                  <p className="desc">
-                    skill를 이용하여 만든 소스를
-                    깃을 통해 볼 수 있습니다.
-                  </p>
-              </div>
-           
+
+          <div className="item__inner">
+            <h3>code view</h3>
+            <p className="desc">
+              skill를 이용하여 만든 소스를
+              깃을 통해 볼 수 있습니다.
+            </p>
+          </div>
+
           <div className="item__bg"></div>
         </div>
         <div className="item i16 noR noB title" href="https://jinhomun.github.io/webs2024/javascript/gsap/gsap01.html">
-       
-            <div className="item__inner">
-              <h3>site view</h3>
-                <p className="desc">
-                  깃에 올린 사이트를 직접 볼 수 있습니다.
-                </p>
-            </div>
-          
+
+          <div className="item__inner">
+            <h3>site view</h3>
+            <p className="desc">
+              깃에 올린 사이트를 직접 볼 수 있습니다.
+            </p>
+          </div>
+
           <div className="item__bg"></div>
-         
+
         </div>
       </div>
     </>
