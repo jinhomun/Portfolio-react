@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap';
-import Highlight from "react-highlight";
 import "highlight.js/styles/atom-one-dark.css";
 
 
