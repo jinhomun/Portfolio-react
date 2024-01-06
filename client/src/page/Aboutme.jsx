@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgAboutme from '../assets/img/about1.png'
 import insta from '../assets/img/insta.svg'
 import github from '../assets/img/github.svg'
 import mail from '../assets/img/mail.svg'
@@ -186,7 +185,7 @@ const Aboutme = () => {
             <div id="item__wrap3" className="fixed">
                 <div className="item i1 black__img">
                     <div className="item__inner">
-                        <img src={imgAboutme} alt="이미지" />
+                        {/* <img src={imgAboutme} alt="이미지" /> */}
                     </div>
                     <div className="item__bg"></div>
                 </div>

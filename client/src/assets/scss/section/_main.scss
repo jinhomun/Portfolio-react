@@ -12,8 +12,8 @@ body {
     grid-template-areas:
         "box1 box2 box3 box4"
         "box5 box6 box7 box7"
-        "box9 box10 box11 box12"
-        "box13 box10 box15 box16"
+        "box9 box10 box11 box15"
+        "box13 box10 box11 box12"
     ;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(4, 25vh);
@@ -50,6 +50,7 @@ body {
 
 #item__wrap>div:nth-child(8) {
     grid-area: box8;
+    display: none;
 }
 
 #item__wrap>div:nth-child(9) {
@@ -74,6 +75,7 @@ body {
 
 #item__wrap>div:nth-child(14) {
     grid-area: box14;
+    display: none;
 }
 
 #item__wrap>div:nth-child(15) {
@@ -82,6 +84,7 @@ body {
 
 #item__wrap>div:nth-child(16) {
     grid-area: box16;
+    display: none;
 }
 
 #item__wrap>div:nth-child(15):hover {
@@ -122,7 +125,7 @@ body {
 }
 
 #item__wrap>div.noB {
-    border-bottom: 0;
+    border-bottom: 1px solid #d6d6d6;
 }
 
 #item__wrap>div.black {
@@ -147,7 +150,9 @@ body {
 }
 
 #item__wrap>div.black__me {
-    background-color: #000;
+    // background-color: #000;
+    background-image: url(../../img/about1.jpg);
+    background-size: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,6 +330,38 @@ body {
 }
 
 @media(max-width:1400px) {
+    #item__wrap {
+        display: grid;
+        grid-template-areas:
+            "box1 box2 box3 box4"
+            "box5 box6 box7 box7"
+            "box9 box10 box11 box15"
+            "box13 box10 box16 box12"
+        ;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(4, 25vh);
+        font-family: 'ChosunNm';
+    }
+    #item__wrap>div:nth-child(16) {
+        grid-area: box16;
+        display: block;
+    }
+    #item__wrap>div.noR {
+        border-right: 1px solid #d6d6d6;
+    }
+    
+    #item__wrap>div.noB {
+        border-bottom: 1px solid #d6d6d6;
+    }
+    #item__wrap>div.black__me {
+        // background-color: #000;
+        background-image: url(../../img/about1-1.png);
+        background-size: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
     #item__wrap>div.noB__kr h3 {
         font-family: var(--main-gmark);
         font-weight: bolder;
@@ -536,25 +573,39 @@ body {
             "box7"
             "box1"
             "box1"
+            "box11"
+            "box11"
+            "box11"
+            "box11"
+            "box11"
+            "box11"
+            "box15"
+            "box15"
+            "box12"
+            "box12"
             "box3"
             "box3"
             "box6"
             "box6"
             "box9"
             "box9"
-            "box15"
-            "box15"
-            "box12"
-            "box12"
             "box16"
             "box16"
+           
         ;
         grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(16, 10vh);
+        grid-template-rows: repeat(22, 10vh);
         font-family: 'ChosunNm';
     }
-
-
+    #item__wrap>div.black__me {
+        // background-color: #000;
+        background-image: url(../../img/about1.jpg);
+        background-size: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
     body {
         overflow-x: auto;
         /* Enable horizontal scrollbar if needed */
@@ -580,8 +631,8 @@ body {
     }
 
     #item__wrap>div:nth-child(11) {
-        grid-area: box10;
-        display: none;
+        grid-area: box11;
+        display: block;
     }
 
     #item__wrap>div:nth-child(12) {

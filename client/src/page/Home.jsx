@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 // img
-import imgME from '../assets/img/about1.png'
 import KOR from '../assets/img/KOR.png'
 import '../assets/scss/section/_main.scss'
 
@@ -328,7 +327,7 @@ const Home = () => {
                 </div>
                 <div className="item i11 black__me">
                     <div className="item__inner">
-                        <img src={imgME} alt="이미지" />
+                        {/* <img src={imgME} alt="이미지" /> */}
                     </div>
                     <div className='item__bg'></div>
                 </div>

@@ -10,10 +10,10 @@ body {
 #item__wrap3 {
     display: grid;
     grid-template-areas:
-        "box1 box1 box1 box4"
-        "box1 box1 box1 box8"
-        "box1 box1 box1 box12"
-        "box13 box14 box16 box16"
+        "box1 box1 box4 box4"
+        "box1 box1 box12 box8"
+        "box1 box1 box14 box13"
+        "box1 box1 box16 box16"
     ;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(4, 25vh);
@@ -103,15 +103,16 @@ body {
 }
 
 #item__wrap3>div.noR {
-    border-right: 0;
+    border-right: 1px solid #d6d6d6;
 }
 
 #item__wrap3>div.noB {
-    border-bottom: 0;
+    border-bottom: 1px solid #d6d6d6;
 }
 
 #item__wrap3>div.black__img {
-    background-color: #000;
+   background-image: url(../../img/about1.jpg);
+   background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +242,6 @@ body {
 } */
 
 #item__wrap3>div.img {
-    display: block;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -477,12 +477,14 @@ body {
     #item__wrap3 {
         display: grid;
         grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(16, 10vh);
+        grid-template-rows: repeat(18, 10vh);
         grid-template-areas:
             "box1"
             "box1"
             "box1"
             "box1"
+            "box1"
+            "box1"
             "box16"
             "box16"
             "box14"
@@ -491,10 +493,11 @@ body {
             "box8"
             "box12"
             "box12"
-            "box13"
-            "box13"
             "box4"
             "box4"
+            "box13"
+            "box13"
+           
         ;
         font-family: 'ChosunNm';
     }

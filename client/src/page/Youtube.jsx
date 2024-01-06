@@ -8,6 +8,7 @@ import imgYoutube2 from '../assets/img/youtube2.png'
 import "../assets/scss/section/_work.scss"
 import SliderScript from '../assets/script/SliderScript';
 import Youtubedesc from '../components/desc/Youtubedesc';
+import "highlight.js/styles/atom-one-dark.css";
 
 
 const Youtube = () => {

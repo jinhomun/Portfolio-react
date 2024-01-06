@@ -8,6 +8,7 @@ import imgMovie3 from '../assets/img/movie3.png'
 import SliderScript from '../assets/script/SliderScript'
 import Moviedesc from '../components/desc/Moviedesc'
 import "../assets/scss/section/_work.scss"
+import "highlight.js/styles/atom-one-dark.css";
 
 
 const Movie = () => {

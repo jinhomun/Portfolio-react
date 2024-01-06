@@ -89,54 +89,7 @@ const searchMovies = async () => {
                                 </Highlight>
                             </p>
                         </div>
-                        <div className="item__inner">
-                            <p className="desc">
-                                API 가져오기<br/>
-                                <Highlight className="javascript"> 
-                                {`const movies = ref([]);
-
-onMounted(async () => {
-    try {
-        const response = await axios.get('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', {
-        params: {
-            api_key: ''// 실제 API 키로 대체
-        },
-        });
-
-        console.log(response); // response.data를 출력하여 실제 데이터를 확인합니다.
-        movies.value = response.data.results;
-        console.log(movies)
-    } catch (err) {
-        console.error('Error fetching popular movies:', err);
-    }
-});`}
-                                </Highlight><br/>
-                                검색한 데이터값 API에 전달하기<br/> 
-                                <Highlight className="javascript"> 
-                                {`const searchKeyword = ref(''); // 변수 추가 해주기.
-const searchMovies = async () => {
-    try {
-        const response = await axios.get('https://api.themoviedb.org/3/search/movie', {
-        params: {
-            api_key: '',// 실제 API 키로 대체
-            language: 'KO-KR',
-            page: '1',
-            query: searchKeyword.value, // API에 전달하기.
-        },
-        });
-        movies.value = response.data.results;
-    } catch (err) {
-        console.error(err);
-    }
-}
-
-// input에 v-model 추가
-<input type="search" v-model="searchKeyword" placeholder="검색어를 입력해주세요" @keyup.enter="searchMovies">
-<button type="submit" @click="searchMovies">검색</button>`}
-
-                                </Highlight>
-                            </p>
-                        </div>
+                       
                     </div>
   )
 }
