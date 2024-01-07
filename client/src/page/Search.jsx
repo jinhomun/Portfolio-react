@@ -7,6 +7,7 @@ import imgSearch2 from '../assets/img/search2.png'
 import SliderScript from '../assets/script/SliderScript';
 
 import "../assets/scss/section/_work.scss"
+import Searchdesc from '../components/desc/Searchdesc';
 
 const Search = () => {
     useEffect(() => {
@@ -259,16 +260,7 @@ const Search = () => {
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i9 black">
-                    <div className="item__inner">
-                        <p className="desc">
-                            indexOf()/search() , include() 를 이용해서 css의 속성 및 타입을 검색 할 수 있고,
-                            charAt() 를 이용해서 첫 글자가 A로 시작하는 css의 속성을 검색 할 수 있고,
-                            find() 를 이용해서 나열된 CSS를 클릭하면 CSS의 속성이 나오도록 구현하고,
-                            filter()를 이용해서 CSS의 사용도에 따라 분류할수 있도록 해보았습니다.
-                            그리고, sort(), reverse() 를 이용해서 오름차순, 내림차순 정렬과 알파벳 순으로 정렬되도록
-                            해보면서, 이렇게 “CSS의 종류가 많이 있구나”라는 생각을 하게되었습니다.
-                        </p>
-                    </div>
+                    <Searchdesc />
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i10 noB">
