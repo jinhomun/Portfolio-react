@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+// import { useSelector } from 'react-redux';
 import axios from 'axios';
 
-const RepleWrite = ({ onNewRepleSubmit }) => {
+const RepleWrite = () => {
     const [reple, setReple] = useState("");
     const [displayName, setDisplayName] = useState("");
-    const [password, setPassword] = useState("");
+    const [password, setPassword] = useState("")
+    // const user = useSelector((state) => state.user);
 
-    const SubmitHandler = async (e) => {
+    const SubmitHandler = (e) => {
         e.preventDefault();
 
-        if (password.length !== 4) {
+        // 비밀번호 길이 검증
+        if (password.length < 4 || password.length > 4) {
             return alert("비밀번호는 4자리로 입력해주세요.");
         }
 
@@ -20,27 +23,21 @@ const RepleWrite = ({ onNewRepleSubmit }) => {
         let body = {
             reple: reple,
             displayName: displayName,
-            password: password,
+            password: password
+            // uid: user.uid,
+            // postId: props.postId
         }
 
-        try {
-            const response = await axios.post("/api/reple/submit", body);
+        axios.post("/api/reple/submit", body).then((response) => {
             if (response.data.success) {
                 alert("댓글 작성이 성공하였습니다.");
-                // 새로운 댓글을 부모 컴포넌트에 전달
-                onNewRepleSubmit(response.data.newReple);
-                // 입력 필드 초기화
-                setReple("");
-                setDisplayName("");
-                setPassword("");
+                window.location.reload();
             } else {
                 alert("댓글 작성이 실패했습니다.");
             }
-        } catch (error) {
-            console.error("댓글 작성 오류:", error);
-            alert("댓글 작성 중 오류가 발생했습니다.");
-        }
+        })
     }
+
     return (
         <>
             <input
