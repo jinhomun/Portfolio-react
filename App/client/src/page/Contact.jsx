@@ -176,9 +176,9 @@ const Contact = () => {
 
         // gsap를 작동하지 않도록 할 링크 선택자를 배열로 저장
         const excludedLinks = [
-            "#item__wrap4 .item.i13 a:nth-of-type(2)",
-            "#item__wrap4 .item.i13 a:nth-of-type(3)",
-            "#item__wrap4 .item.i13 a:nth-of-type(4)",
+            "#item__wrap4 .item.i3 a:nth-of-type(2)",
+            "#item__wrap4 .item.i3 a:nth-of-type(3)",
+            "#item__wrap4 .item.i3 a:nth-of-type(4)",
         ];
 
         const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
