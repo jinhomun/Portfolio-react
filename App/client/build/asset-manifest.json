@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6fc57a14.css",
+    "main.js": "/static/js/main.e89229ec.js",
+    "static/media/quiz1.png": "/static/media/quiz1.e5aa6fceb7018c6c77bb.png",
+    "static/media/gyobok1.png": "/static/media/gyobok1.2f6acde468aec4a6dddf.png",
+    "static/media/movie1.png": "/static/media/movie1.865556134d02fcd871fc.png",
+    "static/media/youtube2.png": "/static/media/youtube2.e612ef2e50e6a93574d9.png",
+    "static/media/gsap1-1.png": "/static/media/gsap1-1.5fd2702d591c820b4dcc.png",
+    "static/media/movie2.png": "/static/media/movie2.335e1b9b897c5397ab8d.png",
+    "static/media/gyobok3.png": "/static/media/gyobok3.d55c8ca6b8fe39061a22.png",
+    "static/media/gyobok2.png": "/static/media/gyobok2.2a92536f96345165a121.png",
+    "static/media/about1.jpg": "/static/media/about1.52b7d487781f3ac5dc10.jpg",
+    "static/media/movie3.png": "/static/media/movie3.8e410397d4f14ac00ce4.png",
+    "static/media/youtube1.png": "/static/media/youtube1.0b90c464ac91efd9d536.png",
+    "static/media/gyobok4.png": "/static/media/gyobok4.5efafe10a34dca991237.png",
+    "static/media/search2.png": "/static/media/search2.ee7ce00d9b915d300844.png",
+    "static/media/about1-1.png": "/static/media/about1-1.3dce87ff5419f742d275.png",
+    "static/media/search1.png": "/static/media/search1.a7fa5becf2b5addda621.png",
+    "static/media/comment.svg": "/static/media/comment.176529f5c882b2b9fc0eab7ea8aed6dd.svg",
+    "static/media/mail.svg": "/static/media/mail.f883a2d6ae37cfdf299b834f5dde97e0.svg",
+    "static/media/insta.svg": "/static/media/insta.3d2ba4a514ac257a3e3d828a1d34638b.svg",
+    "static/media/github.svg": "/static/media/github.4fbb049a4b0e3310fadfe143415de743.svg",
+    "index.html": "/index.html",
+    "static/media/Arrow11.svg": "/static/media/Arrow11.cb7a9639fe30aa8bf23b62123613a2c7.svg",
+    "main.6fc57a14.css.map": "/static/css/main.6fc57a14.css.map",
+    "main.e89229ec.js.map": "/static/js/main.e89229ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fc57a14.css",
+    "static/js/main.e89229ec.js"
+  ]
+}
