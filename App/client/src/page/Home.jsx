@@ -278,13 +278,13 @@ const Home = () => {
                         <p className="desc3">
                             웹 표준을 준수하며 복잡한 레이아웃과 반응형 디자인을 다루고, 패럴랙스 스크롤링을 활용하여 웹 개발에서의 다양한 경험을 쌓아왔습니다.
                         </p>
-                        <div className="list">
+                        {/* <div className="list">
                             <ul>
                                 <li><a href="/wpoint">1</a></li>
                                 <li><a href="/vite">2</a></li>
-                                {/* <li><a href="section/w.point.html">3</a></li> */}
+                                <li><a href="section/w.point.html">3</a></li>
                             </ul>
-                        </div>
+                        </div> */}
 
                     </div>
                     <div className='item__bg'></div>
@@ -356,23 +356,23 @@ const Home = () => {
                 </div>
                 <div className="item i15 noB title" href="/aboutme">
                     <div className="item__inner">
-                        
-                            <h3>ABOUT ME</h3>
-                            <p className="desc">
-                                안녕하세요!<br />
-                                저는 열정적이고 창의적인 프론트엔드 개발자 문진호 입니다</p>
-                        
+
+                        <h3>ABOUT ME</h3>
+                        <p className="desc">
+                            안녕하세요!<br />
+                            저는 열정적이고 창의적인 프론트엔드 개발자 문진호 입니다</p>
+
 
                     </div>
                     <div className='item__bg'></div>
                 </div>
                 <div className="item i16 noR noB" href="/contact">
                     <div className="item__inner">
-                      
-                            <h3>CONTACT ME</h3>
-                            <p className="desc"></p>
 
-                      
+                        <h3>CONTACT ME</h3>
+                        <p className="desc"></p>
+
+
 
                     </div>
                     <div className='item__bg'></div>

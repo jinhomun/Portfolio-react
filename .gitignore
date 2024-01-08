@@ -1,6 +1,6 @@
-server/node_modules
-server/package-lock.json
-server/config/dev.js
+/App/server/config/dev.js
+/App/node_modules
+/App/package-lock.json
 
-client/node_modules
-client/package-lock.json
+/App/client/node_modules
+/App/client/package-lock.json
