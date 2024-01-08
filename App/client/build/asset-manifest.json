@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.9725c5ac.css",
-    "main.js": "/static/js/main.d8895fa4.js",
-    "static/media/quiz1.png": "/static/media/quiz1.e5aa6fceb7018c6c77bb.png",
+    "main.css": "/static/css/main.dabfd56e.css",
+    "main.js": "/static/js/main.8f594fe5.js",
+    "static/media/about1-3.png": "/static/media/about1-3.2a5cf9ef127cf2c032ef.png",
+    "static/media/quiz1-2.png": "/static/media/quiz1-2.e8a2b9d4220b4104f2cd.png",
+    "static/media/quiz1-1.png": "/static/media/quiz1-1.e5aa6fceb7018c6c77bb.png",
     "static/media/gyobok1.png": "/static/media/gyobok1.2f6acde468aec4a6dddf.png",
     "static/media/movie1.png": "/static/media/movie1.865556134d02fcd871fc.png",
     "static/media/youtube2.png": "/static/media/youtube2.e612ef2e50e6a93574d9.png",
@@ -13,21 +15,30 @@
     "static/media/about1.jpg": "/static/media/about1.52b7d487781f3ac5dc10.jpg",
     "static/media/movie3.png": "/static/media/movie3.8e410397d4f14ac00ce4.png",
     "static/media/youtube1.png": "/static/media/youtube1.0b90c464ac91efd9d536.png",
+    "static/media/gsap1-3.png": "/static/media/gsap1-3.a37510a848591c4924d1.png",
+    "static/media/gsap1-4.png": "/static/media/gsap1-4.200bb2c595191d1be000.png",
     "static/media/gyobok4.png": "/static/media/gyobok4.5efafe10a34dca991237.png",
-    "static/media/search2.png": "/static/media/search2.ee7ce00d9b915d300844.png",
+    "static/media/quiz1-3.png": "/static/media/quiz1-3.4f7bad391d368e8c2c92.png",
+    "static/media/search1-4.png": "/static/media/search1-4.93d029138034e7409645.png",
+    "static/media/search1-5.png": "/static/media/search1-5.60b69904137eae153398.png",
+    "static/media/search1-6.png": "/static/media/search1-6.ee7ce00d9b915d300844.png",
+    "static/media/search1-2.png": "/static/media/search1-2.fc49be3530e44ac811f9.png",
+    "static/media/search1-1.png": "/static/media/search1-1.c9b448f3e66c569b03c1.png",
+    "static/media/search1-3.png": "/static/media/search1-3.9529ac2159d98b7dbc65.png",
     "static/media/about1-1.png": "/static/media/about1-1.3dce87ff5419f742d275.png",
     "static/media/search1.png": "/static/media/search1.a7fa5becf2b5addda621.png",
+    "static/media/gsap1-2.png": "/static/media/gsap1-2.464673ce39f7fbfca849.png",
     "static/media/comment.svg": "/static/media/comment.176529f5c882b2b9fc0eab7ea8aed6dd.svg",
     "static/media/mail.svg": "/static/media/mail.f883a2d6ae37cfdf299b834f5dde97e0.svg",
     "static/media/insta.svg": "/static/media/insta.3d2ba4a514ac257a3e3d828a1d34638b.svg",
     "static/media/github.svg": "/static/media/github.4fbb049a4b0e3310fadfe143415de743.svg",
     "index.html": "/index.html",
     "static/media/Arrow11.svg": "/static/media/Arrow11.cb7a9639fe30aa8bf23b62123613a2c7.svg",
-    "main.9725c5ac.css.map": "/static/css/main.9725c5ac.css.map",
-    "main.d8895fa4.js.map": "/static/js/main.d8895fa4.js.map"
+    "main.dabfd56e.css.map": "/static/css/main.dabfd56e.css.map",
+    "main.8f594fe5.js.map": "/static/js/main.8f594fe5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9725c5ac.css",
-    "static/js/main.d8895fa4.js"
+    "static/css/main.dabfd56e.css",
+    "static/js/main.8f594fe5.js"
   ]
 }
