@@ -163,6 +163,11 @@ const Youtube = () => {
             delay: 2.1,
             y: 0
         });
+        gsap.to(".item.i6 .item__inner", {
+            opacity: 1,
+            delay: 2.1,
+            y: 0
+        });
 
         const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
             document.querySelector(linkSelector).addEventListener('click', (event) => {
@@ -189,6 +194,7 @@ const Youtube = () => {
         linkClickHandler(".item.i1 li:nth-child(3) a", "/movie");
         linkClickHandler(".item.i3", "/");
         linkClickHandler(".item.i4", "/movie");
+        linkClickHandler(".item.i6", "/contact");
         linkClickHandler(".item.i15", "https://github.com/jinhomun/SoccerYoutube-site", true);
         linkClickHandler(".item.i16", "https://youtube-project2023-jinhomun.netlify.app/", true);
         // ...
@@ -240,8 +246,12 @@ const Youtube = () => {
                     </div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i6">
-                    <div className="item__inner"></div>
+                <div className="item i6 title" href="/contact">
+                    <div className="item__inner">
+                        <h3>CONTACT ME</h3>
+                        <p className="desc">
+                            궁금하신점이 있으면 남겨주세요!</p>
+                    </div>
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i7 noR img">
@@ -264,7 +274,7 @@ const Youtube = () => {
                 </div>
                 <div className="item i9 black">
                     <Youtubedesc />
-                   
+
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i10 noB">

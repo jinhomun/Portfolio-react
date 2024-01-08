@@ -43,17 +43,15 @@ const RepleWrite = () => {
             <input
                 className="name-input"
                 placeholder="Your Name"
-                text="text"
                 value={displayName}
                 onChange={(e) => { setDisplayName(e.currentTarget.value) }}
             />
-            <input
+            <textarea
                 className="comment-input"
                 placeholder="Input Comment"
-                text="text"
                 value={reple}
                 onChange={(e) => { setReple(e.currentTarget.value) }}
-            />
+            ></textarea>
             <input
                 className="name-input"
                 placeholder="Password(4자리)"
@@ -63,7 +61,7 @@ const RepleWrite = () => {
             />
             <button className="submit" onClick={(e) => { SubmitHandler(e) }}>등록</button>
         </>
-    )
+    );
 }
 
 export default RepleWrite

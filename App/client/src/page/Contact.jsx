@@ -244,10 +244,11 @@ const Contact = () => {
                     <div className="item__bg"></div>
                 </div>
                 <div className="item i5 comment">
-                    <div className="item__inner">
-                        <h3>COMMENT LIST</h3>
-                        <RepleList />
-
+                    <div className="list">
+                        <div className="item__inner">
+                            <h3>COMMENT LIST</h3>
+                            <RepleList />
+                        </div>
                     </div>
                     <div className="item__bg"></div>
                 </div>
