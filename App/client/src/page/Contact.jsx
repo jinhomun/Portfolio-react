@@ -174,7 +174,7 @@ const Contact = () => {
         });
 
 
-        const linkClickHandler = (linkSelector, destination) => {
+        const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
             document.querySelector(linkSelector).addEventListener('click', (event) => {
                 event.preventDefault(); // 링크의 기본 동작 방지
 
@@ -183,19 +183,24 @@ const Contact = () => {
                     ease: "power3.inOut",
                     onComplete: () => {
                         // 애니메이션이 완료된 후 링크로 이동
-                        window.location.href = destination;
+                        if (새창여부) {
+                            window.open(destination, '_blank'); // 새 창에서 링크 열기
+                        } else {
+                            window.location.href = destination; // 현재 창에서 링크 열기
+                        }
                     },
                 });
             });
         };
 
+
         // ...
 
         linkClickHandler("#item__wrap4 .item.i4", "/");
         linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(1)", "/contact");
-        linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(2)", "https://github.com/jinhomun");
-        linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com");
-        linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(4)", "https://www.instagram.com/coding_jinho/");
+        linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(2)", "https://github.com/jinhomun", true);
+        linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com", true);
+        linkClickHandler("#item__wrap4 .item.i3 a:nth-of-type(4)", "https://www.instagram.com/coding_jinho/", true);
 
 
     }, []);
@@ -231,10 +236,10 @@ const Contact = () => {
                 </div>
                 <div className="item i4 home" href="/">
                     <div className="item__inner">
-                       
-                            <p>HOME</p>
-                            <img src={arrow} alt="화살표"></img>
-                        
+
+                        <p>HOME</p>
+                        <img src={arrow} alt="화살표"></img>
+
                     </div>
                     <div className="item__bg"></div>
                 </div>

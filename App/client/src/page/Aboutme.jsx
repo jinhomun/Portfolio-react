@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
@@ -155,7 +155,7 @@ const Aboutme = () => {
         });
 
 
-        const linkClickHandler = (linkSelector, destination) => {
+        const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
             document.querySelector(linkSelector).addEventListener('click', (event) => {
                 event.preventDefault(); // 링크의 기본 동작 방지
 
@@ -164,20 +164,25 @@ const Aboutme = () => {
                     ease: "power3.inOut",
                     onComplete: () => {
                         // 애니메이션이 완료된 후 링크로 이동
-                        window.location.href = destination;
+                        if (새창여부) {
+                            window.open(destination, '_blank'); // 새 창에서 링크 열기
+                        } else {
+                            window.location.href = destination; // 현재 창에서 링크 열기
+                        }
                     },
                 });
             });
         };
+
 
         // ...
 
         linkClickHandler("#item__wrap3 .item.i4", "/");
         linkClickHandler("#item__wrap3 .item.i14", "/contact");
         linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(1)", "/contact");
-        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(2)", "https://github.com/jinhomun");
-        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com");
-        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(4)", "https://www.instagram.com/coding_jinho/");
+        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(2)", "https://github.com/jinhomun", true);
+        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(3)", "mailto:answlsgh95@gmail.com", true);
+        linkClickHandler("#item__wrap3 .item.i13 a:nth-of-type(4)", "https://www.instagram.com/coding_jinho/", true);
 
     }, []);
     return (
@@ -199,10 +204,10 @@ const Aboutme = () => {
                 </div>
                 <div className="item i4 noR home" href="/">
                     <div className="item__inner">
-                       
-                            <p>HOME</p>
-                            <img src={arrow} alt="화살표"></img>
-                       
+
+                        <p>HOME</p>
+                        <img src={arrow} alt="화살표"></img>
+
                     </div>
                     <div className="item__bg"></div>
                 </div>
@@ -271,11 +276,11 @@ const Aboutme = () => {
                 </div>
                 <div className="item i14 noB title" href="/contact">
                     <div className="item__inner">
-                        
-                            <h3>CONTACT ME</h3>
-                            <p className="desc">안녕하세요!
-                                저는 열정적이고 창의적인 프론트엔드 개발자 문진호 입니다.</p>
-                        
+
+                        <h3>CONTACT ME</h3>
+                        <p className="desc">안녕하세요!
+                            저는 열정적이고 창의적인 프론트엔드 개발자 문진호 입니다.</p>
+
                     </div>
                     <div className="item__bg"></div>
                 </div>
