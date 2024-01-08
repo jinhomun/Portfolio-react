@@ -2,10 +2,13 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgGsap from '../assets/img/gsap1-1.png'
-
+import imgGsap1 from '../assets/img/gsap1-1.png'
+import imgGsap2 from '../assets/img/gsap1-2.png'
+import imgGsap3 from '../assets/img/gsap1-3.png'
+import imgGsap4 from '../assets/img/gsap1-4.png'
 import "../assets/scss/section/_work.scss"
 import Gsapdesc from '../components/desc/Gsapdesc';
+import SliderScript from '../assets/script/SliderScript';
 
 const Gsap = () => {
 
@@ -166,22 +169,42 @@ const Gsap = () => {
       y: 0
     });
 
+    // gsap를 작동하지 않도록 할 링크 선택자를 배열로 저장
+    const excludedLinks = [
+      ".item.i15",
+      ".item.i16",
+    ];
+
     const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
-      document.querySelector(linkSelector).addEventListener('click', (event) => {
+      const linkElement = document.querySelector(linkSelector);
+
+      // gsap를 작동하지 않도록 할 링크인지 확인
+      const isExcluded = excludedLinks.includes(linkSelector);
+
+      linkElement.addEventListener('click', (event) => {
         event.preventDefault(); // 링크의 기본 동작 방지
 
-        gsap.to(".item__bg", {
-          height: "100%",
-          ease: "power3.inOut",
-          onComplete: () => {
-            // 애니메이션이 완료된 후 링크로 이동
-            if (새창여부) {
-              window.open(destination, '_blank'); // 새 창에서 링크 열기
-            } else {
-              window.location.href = destination; // 현재 창에서 링크 열기
-            }
-          },
-        });
+        if (!isExcluded) {
+          gsap.to(".item__bg", {
+            height: "100%",
+            ease: "power3.inOut",
+            onComplete: () => {
+              // 애니메이션이 완료된 후 링크로 이동
+              if (새창여부) {
+                window.open(destination, '_blank'); // 새 창에서 링크 열기
+              } else {
+                window.location.href = destination; // 현재 창에서 링크 열기
+              }
+            },
+          });
+        } else {
+          // gsap를 작동하지 않도록 할 링크일 경우 바로 링크 이동
+          if (새창여부) {
+            window.open(destination, '_blank');
+          } else {
+            window.location.href = destination;
+          }
+        }
       });
     };
 
@@ -251,7 +274,21 @@ const Gsap = () => {
         </div>
         <div className="item i7 noR img">
           <div className="item__inner">
-            <img src={imgGsap} alt="gsap01" />
+            <SliderScript />
+            <div className="sliderWrap">
+              <div className="slider">
+                <img src={imgGsap1} alt="gsap01" />
+              </div>
+              <div className="slider">
+                <img src={imgGsap2} alt="gsap02" />
+              </div>
+              <div className="slider">
+                <img src={imgGsap3} alt="gsap03" />
+              </div>
+              <div className="slider">
+                <img src={imgGsap4} alt="gsap04" />
+              </div>
+            </div>
           </div>
           <div className="item__bg"></div>
         </div>

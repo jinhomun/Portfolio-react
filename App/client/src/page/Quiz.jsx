@@ -2,10 +2,13 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
-import imgQuiz from '../assets/img/quiz1.png'
+import imgQuiz1 from '../assets/img/quiz1-1.png'
+import imgQuiz2 from '../assets/img/quiz1-2.png'
+import imgQuiz3 from '../assets/img/quiz1-3.png'
 
 import "../assets/scss/section/_work.scss"
 import Quizdesc from '../components/desc/Quizdesc';
+import SliderScript from '../assets/script/SliderScript';
 
 
 
@@ -167,22 +170,42 @@ const Quiz = () => {
             y: 0
         });
 
+        // gsap를 작동하지 않도록 할 링크 선택자를 배열로 저장
+        const excludedLinks = [
+            ".item.i15",
+            ".item.i16",
+        ];
+
         const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
-            document.querySelector(linkSelector).addEventListener('click', (event) => {
+            const linkElement = document.querySelector(linkSelector);
+
+            // gsap를 작동하지 않도록 할 링크인지 확인
+            const isExcluded = excludedLinks.includes(linkSelector);
+
+            linkElement.addEventListener('click', (event) => {
                 event.preventDefault(); // 링크의 기본 동작 방지
 
-                gsap.to(".item__bg", {
-                    height: "100%",
-                    ease: "power3.inOut",
-                    onComplete: () => {
-                        // 애니메이션이 완료된 후 링크로 이동
-                        if (새창여부) {
-                            window.open(destination, '_blank'); // 새 창에서 링크 열기
-                        } else {
-                            window.location.href = destination; // 현재 창에서 링크 열기
-                        }
-                    },
-                });
+                if (!isExcluded) {
+                    gsap.to(".item__bg", {
+                        height: "100%",
+                        ease: "power3.inOut",
+                        onComplete: () => {
+                            // 애니메이션이 완료된 후 링크로 이동
+                            if (새창여부) {
+                                window.open(destination, '_blank'); // 새 창에서 링크 열기
+                            } else {
+                                window.location.href = destination; // 현재 창에서 링크 열기
+                            }
+                        },
+                    });
+                } else {
+                    // gsap를 작동하지 않도록 할 링크일 경우 바로 링크 이동
+                    if (새창여부) {
+                        window.open(destination, '_blank');
+                    } else {
+                        window.location.href = destination;
+                    }
+                }
             });
         };
 
@@ -254,7 +277,18 @@ const Quiz = () => {
                 </div>
                 <div className="item i7 noR img ">
                     <div className="item__inner">
-                        <img src={imgQuiz} alt="quiz01" />
+                        <SliderScript />
+                        <div className="sliderWrap">
+                            <div className="slider">
+                                <img src={imgQuiz1} alt="quiz01" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgQuiz2} alt="quiz02" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgQuiz3} alt="quiz03" />
+                            </div>
+                        </div>
                     </div>
                     <div className="item__bg"></div>
                 </div>

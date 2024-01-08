@@ -92,10 +92,12 @@ body {
 #item__wrap3>div:nth-child(16) {
     grid-area: box16;
 }
+
 #item__wrap3>div:nth-child(14):hover {
     background-color: #000;
     color: #fff;
 }
+
 #item__wrap3>div {
     border-bottom: 1px solid #d6d6d6;
     border-right: 1px solid #d6d6d6;
@@ -111,8 +113,11 @@ body {
 }
 
 #item__wrap3>div.black__img {
-   background-image: url(../../img/about1.jpg);
-   background-size: 100% 100%;
+    background-image: url(../../img/about1-3.png);
+    background-size: cover;
+    /* 이미지 비율을 유지하면서 늘리기 */
+    background-position: center;
+    /* 이미지를 가운데 정렬 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -497,7 +502,7 @@ body {
             "box4"
             "box13"
             "box13"
-           
+
         ;
         font-family: 'ChosunNm';
     }

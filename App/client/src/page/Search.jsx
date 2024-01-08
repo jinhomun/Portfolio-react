@@ -3,7 +3,12 @@ import gsap from 'gsap';
 
 import arrow from '../assets/img/Arrow11.svg'
 import imgSearch1 from '../assets/img/search1.png'
-import imgSearch2 from '../assets/img/search2.png'
+import imgSearch2 from '../assets/img/search1-1.png'
+import imgSearch3 from '../assets/img/search1-2.png'
+import imgSearch4 from '../assets/img/search1-3.png'
+import imgSearch5 from '../assets/img/search1-4.png'
+import imgSearch6 from '../assets/img/search1-5.png'
+import imgSearch7 from '../assets/img/search1-6.png'
 import SliderScript from '../assets/script/SliderScript';
 
 import "../assets/scss/section/_work.scss"
@@ -167,22 +172,42 @@ const Search = () => {
             y: 0
         });
 
+        // gsap를 작동하지 않도록 할 링크 선택자를 배열로 저장
+        const excludedLinks = [
+            ".item.i15",
+            ".item.i16",
+        ];
+
         const linkClickHandler = (linkSelector, destination, 새창여부 = false) => {
-            document.querySelector(linkSelector).addEventListener('click', (event) => {
+            const linkElement = document.querySelector(linkSelector);
+
+            // gsap를 작동하지 않도록 할 링크인지 확인
+            const isExcluded = excludedLinks.includes(linkSelector);
+
+            linkElement.addEventListener('click', (event) => {
                 event.preventDefault(); // 링크의 기본 동작 방지
 
-                gsap.to(".item__bg", {
-                    height: "100%",
-                    ease: "power3.inOut",
-                    onComplete: () => {
-                        // 애니메이션이 완료된 후 링크로 이동
-                        if (새창여부) {
-                            window.open(destination, '_blank'); // 새 창에서 링크 열기
-                        } else {
-                            window.location.href = destination; // 현재 창에서 링크 열기
-                        }
-                    },
-                });
+                if (!isExcluded) {
+                    gsap.to(".item__bg", {
+                        height: "100%",
+                        ease: "power3.inOut",
+                        onComplete: () => {
+                            // 애니메이션이 완료된 후 링크로 이동
+                            if (새창여부) {
+                                window.open(destination, '_blank'); // 새 창에서 링크 열기
+                            } else {
+                                window.location.href = destination; // 현재 창에서 링크 열기
+                            }
+                        },
+                    });
+                } else {
+                    // gsap를 작동하지 않도록 할 링크일 경우 바로 링크 이동
+                    if (새창여부) {
+                        window.open(destination, '_blank');
+                    } else {
+                        window.location.href = destination;
+                    }
+                }
             });
         };
 
@@ -256,10 +281,25 @@ const Search = () => {
                         <SliderScript />
                         <div className="sliderWrap">
                             <div className="slider">
-                                <img src={imgSearch1} alt="search01" />
+                                <img src={imgSearch1} alt="search1" />
                             </div>
                             <div className="slider">
-                                <img src={imgSearch2} alt="search02" />
+                                <img src={imgSearch2} alt="search1-1" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgSearch3} alt="search1-2" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgSearch4} alt="search1-3" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgSearch5} alt="search1-4" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgSearch6} alt="search1-5" />
+                            </div>
+                            <div className="slider">
+                                <img src={imgSearch7} alt="search1-6" />
                             </div>
                         </div>
                     </div>
