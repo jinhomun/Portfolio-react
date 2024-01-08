@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const RepleWrite = () => {
+const RepleWrite = ({ onNewRepleSubmit }) => {
     const [reple, setReple] = useState("");
     const [displayName, setDisplayName] = useState("");
     const [password, setPassword] = useState("");
 
-    const SubmitHandler = (e) => {
+    const SubmitHandler = async (e) => {
         e.preventDefault();
 
         if (password.length !== 4) {
@@ -23,25 +23,24 @@ const RepleWrite = () => {
             password: password,
         }
 
-        // 서버로 데이터를 전송하는 비동기 요청
-        axios.post("/api/reple/submit", body)
-            .then((response) => {
-                if (response.data.success) {
-                    alert("댓글 작성이 성공하였습니다.");
-
-                    // 작성이 성공하면 페이지를 새로고침하지 않고
-                    // 상태를 업데이트하여 화면에 반영할 수 있습니다.
-                    setReple(""); // 댓글 내용 초기화
-                } else {
-                    alert("댓글 작성이 실패했습니다.");
-                }
-            })
-            .catch((error) => {
-                console.error("댓글 작성 오류:", error);
-                alert("댓글 작성 중 오류가 발생했습니다.");
-            });
+        try {
+            const response = await axios.post("/api/reple/submit", body);
+            if (response.data.success) {
+                alert("댓글 작성이 성공하였습니다.");
+                // 새로운 댓글을 부모 컴포넌트에 전달
+                onNewRepleSubmit(response.data.newReple);
+                // 입력 필드 초기화
+                setReple("");
+                setDisplayName("");
+                setPassword("");
+            } else {
+                alert("댓글 작성이 실패했습니다.");
+            }
+        } catch (error) {
+            console.error("댓글 작성 오류:", error);
+            alert("댓글 작성 중 오류가 발생했습니다.");
+        }
     }
-
     return (
         <>
             <input
@@ -68,4 +67,4 @@ const RepleWrite = () => {
     );
 }
 
-export default RepleWrite;
+export default RepleWrite
