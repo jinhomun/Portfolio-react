@@ -10,6 +10,7 @@ import Contact from './page/Contact'
 import Gsap from './page/Gsap'
 import Search from './page/Search'
 import Quiz from './page/Quiz'
+import Promptopia from './page/Promptopia'
 
 const App = () => {
   return (
@@ -20,8 +21,8 @@ const App = () => {
         <Route path='/gsap' element={<Gsap />} />
         <Route path='/quiz' element={<Quiz />} />
         <Route path='/search' element={<Search />} />
-        {/* <Route path='/wpoint' element={<Wpoint />} />
-        <Route path='/vite' element={<Vite />} /> */}
+        <Route path='/promptopia' element={<Promptopia />} />
+       
         <Route path='/gyobok' element={<Gyobok />} />
         <Route path='/youtube' element={<Youtube />} />
         <Route path='/movie' element={<Movie />} />
