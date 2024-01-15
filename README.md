@@ -542,6 +542,27 @@ module.exports = router;
 - 순서대로, 코드를 입력하거나 복사하면 되는데, `git init`  -> `heroku git:remote -a Appname` -> `git add .` -> `git commit -am "make it better"` ->  `git subtree push --prefix App heroku main` 이 순서대로 코드를 입력하면 배포가 될것이다.
 - 배포가 안되고, 오류가 떴을땐, `heroku logs --tail` 오류검사를 해보면 된다.  
 
+## fly.io 배포
+
+### 셋팅
+- 파일 셋팅은 heroku 배포했을때 그 상태로 둔 다음, `iwr https://fly.io/install.ps1 -useb | iex` 설치
+- `flyctl auth login` 로그인 후, 카드 등록.
+-  cd app -> `fly launch` 배포사이트를 만들어야하기 때문에 launch 해야함.
+-  server의 index.js의 port = 8080 으로 바꿔야함.
+-  server의 package.json 
+```js
+"scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+```
+- .env 환경변수는 fly.toml에 저장.
+```js
+[env]
+MONGO_URI ="몽고디비 주소"
+```
+- fly deploy 하면 됨. 코드 수정하면 npm run build 후, fly deploy하면 됨.
+
 ## 트러블 슈팅
 ### nodemon 에러
 server -> package.json
