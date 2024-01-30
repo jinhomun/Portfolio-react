@@ -209,11 +209,11 @@ const Movie = () => {
         };
 
         // // Call the linkClickHandler function for each link with the correct destination
-        linkClickHandler(".item.i1 li:nth-child(1) a", "/gyobok");
-        linkClickHandler(".item.i1 li:nth-child(2) a", "/youtube");
-        linkClickHandler(".item.i1 li:nth-child(3) a", "/movie");
+        linkClickHandler(".item.i1 li:nth-child(1) a", "/youtube");
+        linkClickHandler(".item.i1 li:nth-child(2) a", "/movie");
+        linkClickHandler(".item.i1 li:nth-child(3) a", "/promptopia");
         linkClickHandler(".item.i3", "/");
-        linkClickHandler(".item.i4", "/gyobok");
+        linkClickHandler(".item.i4", "/promtopia");
         linkClickHandler(".item.i6", "/contact");
         linkClickHandler(".item.i15", "https://github.com/jinhomun/OnMovie-site", true);
         linkClickHandler(".item.i16", "https://moviesite-vue-jinho.netlify.app/", true);
@@ -227,9 +227,9 @@ const Movie = () => {
                 <div className="item i1 title">
                     <div className="item__inner">
                         <ul>
-                            <li><a href="/gyobok">1</a></li>
-                            <li><a href="/youtube">2</a></li>
-                            <li className="active"><a href="/movie">3</a></li>
+                            <li><a href="/youtube">1</a></li>
+                            <li className="active"><a href="/movie">2</a></li>
+                            <li ><a href="/promptopia">3</a></li>
                         </ul>
                         <h2 className="long">movie site</h2>
                     </div>

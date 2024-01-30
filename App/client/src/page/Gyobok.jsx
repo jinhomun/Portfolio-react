@@ -214,10 +214,9 @@ const Gyobok = () => {
 
         // // Call the linkClickHandler function for each link with the correct destination
         linkClickHandler(".item.i1 li:nth-child(1) a", "/gyobok");
-        linkClickHandler(".item.i1 li:nth-child(2) a", "/youtube");
-        linkClickHandler(".item.i1 li:nth-child(3) a", "/movie");
+        linkClickHandler(".item.i1 li:nth-child(2) a", "/kickoff");
         linkClickHandler(".item.i3", "/");
-        linkClickHandler(".item.i4", "/youtube");
+        linkClickHandler(".item.i4", "/kickoff");
         linkClickHandler(".item.i6", "/contact");
         linkClickHandler(".item.i15", "https://github.com/jinhomun/Gogyobok-site", true);
         linkClickHandler(".item.i16", "https://github.com/jinhomun/Gogyobok-site", true);
@@ -231,8 +230,7 @@ const Gyobok = () => {
                     <div className="item__inner">
                         <ul>
                             <li className="active"><a href="/gyobok">1</a></li>
-                            <li><a href="/youtube">2</a></li>
-                            <li><a href="/movie">3</a></li>
+                            <li><a href="/kickoff">2</a></li>
                         </ul>
                         <h2 className="long">gyobok site</h2>
                     </div>
@@ -251,10 +249,10 @@ const Gyobok = () => {
                     </div>
                     <div className="item__bg"></div>
                 </div>
-                <div className="item i4 noR home" href="/youtube">
+                <div className="item i4 noR home" href="/kickoff">
                     <div className="item__inner">
 
-                        <p>YOUTUBE</p>
+                        <p>KICKOFF</p>
                         <img src={arrow} alt="화살표"></img>
 
                     </div>

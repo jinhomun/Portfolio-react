@@ -199,11 +199,12 @@ const Promptopia = () => {
     };
 
     // // Call the linkClickHandler function for each link with the correct destination
-    // linkClickHandler(".item.i1 li:nth-child(1) a", "/gyobok");
-    // linkClickHandler(".item.i1 li:nth-child(2) a", "/youtube");
-    // linkClickHandler(".item.i1 li:nth-child(3) a", "/movie");
+
+    linkClickHandler(".item.i1 li:nth-child(1) a", "/youtube");
+    linkClickHandler(".item.i1 li:nth-child(2) a", "/movie");
+    linkClickHandler(".item.i1 li:nth-child(3) a", "/promptopia");
     linkClickHandler(".item.i3", "/");
-    // linkClickHandler(".item.i4", "/youtube");
+    linkClickHandler(".item.i4", "/youtube");
     linkClickHandler(".item.i6", "/contact");
     linkClickHandler(
       ".item.i15",
@@ -223,15 +224,9 @@ const Promptopia = () => {
         <div className="item i1 title">
           <div className="item__inner">
             <ul>
-              {/* <li className="active">
-                <a href="/gyobok">1</a>
-              </li>
-              <li>
-                <a href="/youtube">2</a>
-              </li>
-              <li>
-                <a href="/movie">3</a>
-              </li> */}
+              <li><a href="/youtube">1</a></li>
+              <li><a href="/movie">2</a></li>
+              <li className="active"><a href="/promptopia">3</a></li>
             </ul>
             <h2 className="long">Promptopia</h2>
           </div>
@@ -250,7 +245,7 @@ const Promptopia = () => {
         </div>
         <div className="item i4 noR home" href="/youtube">
           <div className="item__inner">
-            <p>HOME</p>
+            <p>Youtube</p>
             <img src={arrow} alt="화살표"></img>
           </div>
           <div className="item__bg"></div>
@@ -336,7 +331,7 @@ const Promptopia = () => {
         >
           <div className="item__inner">
             <h3>site view</h3>
-            <p className="desc">깃에 올린 파일을 직접 볼 수 있습니다.</p>
+            <p className="desc">vercel에 올린 사이트를 직접 볼 수 있습니다.</p>
           </div>
 
           <div className="item__bg"></div>

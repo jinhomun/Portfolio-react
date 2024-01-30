@@ -204,12 +204,12 @@ const Home = () => {
     linkClickHandler(".item.i3 .list li:nth-child(2) a", "/quiz");
     linkClickHandler(".item.i3 .list li:nth-child(3) a", "/search");
 
-    linkClickHandler(".item.i6 .list li:nth-child(1) a", "/promptopia");
-    linkClickHandler(".item.i6 .list li:nth-child(2) a", "/vite");
+    linkClickHandler(".item.i6 .list li:nth-child(1) a", "/gyobok");
+    linkClickHandler(".item.i6 .list li:nth-child(2) a", "/kickoff");
 
-    linkClickHandler(".item.i9 .list li:nth-child(1) a", "/gyobok");
-    linkClickHandler(".item.i9 .list li:nth-child(2) a", "/youtube");
-    linkClickHandler(".item.i9 .list li:nth-child(3) a", "/movie");
+    linkClickHandler(".item.i9 .list li:nth-child(1) a", "/youtube");
+    linkClickHandler(".item.i9 .list li:nth-child(2) a", "/movie");
+    linkClickHandler(".item.i9 .list li:nth-child(3) a", "/promtopia");
 
     linkClickHandler(".item.i15", "/aboutme");
     linkClickHandler(".item.i16", "/contact");
@@ -270,17 +270,19 @@ const Home = () => {
         <div className="item i6 title">
           <div className="item__inner">
             <h3>
-              site<em>coding</em>
+              Team<em>coding</em>
             </h3>
             <p className="desc3">
-              웹 표준을 준수하며 복잡한 레이아웃과 반응형 디자인을 다루고,
-              패럴랙스 스크롤링을 활용하여 웹 개발에서의 다양한 경험을
-              쌓아왔습니다.
+              팀 프로젝트를 통해 협업과 의사소통 능력을 향상시키며 다양한 아이디어를 존중하는 중요성을 깨달았고,
+              어려움을 함께 극복하며 팀워크와 문제 해결 능력을 향상시켰습니다.
             </p>
             <div className="list">
               <ul>
                 <li>
-                  <a href="/promptopia">1</a>
+                  <a href="/gyobok">1</a>
+                </li>
+                <li>
+                  <a href="/kickoff">2</a>
                 </li>
               </ul>
             </div>
@@ -303,20 +305,20 @@ const Home = () => {
               work<em>coding</em>
             </h3>
             <p className="desc2">
-              "'GYOBOK SITE'은 PHP로 제작된 맞춤형 웹 경험, 'YOUTUBE SITE'은
-              React와 API를 활용한 빠르고 동적인 콘텐츠 제공, 'MOVIE SITE'은
-              Vue.js와 API를 활용한 혁신적인 영화 탐색을 제공합니다."
+              1. React와 API를 활용한 YoutubeSite<br />
+              2. Vue.js와 API를 활용한 MovieSite<br />
+              3. Next.js 활용한 Promptopia<br />
             </p>
             <div className="list">
               <ul>
                 <li>
-                  <a href="/gyobok">1</a>
+                  <a href="/youtube">1</a>
                 </li>
                 <li>
-                  <a href="/youtube">2</a>
+                  <a href="/movie">2</a>
                 </li>
                 <li>
-                  <a href="/movie">3</a>
+                  <a href="/promptopia">3</a>
                 </li>
               </ul>
             </div>

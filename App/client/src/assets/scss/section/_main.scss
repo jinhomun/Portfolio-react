@@ -152,7 +152,8 @@ body {
 #item__wrap>div.black__me {
     // background-color: #000;
     background-image: url(../../img/about1.jpg);
-    background-size: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 */
+    background-size: cover;
+    /* 이미지가 부모 요소에 꽉 차도록 설정 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,26 +343,31 @@ body {
         grid-template-rows: repeat(4, 25vh);
         font-family: 'ChosunNm';
     }
+
     #item__wrap>div:nth-child(16) {
         grid-area: box16;
         display: block;
     }
+
     #item__wrap>div.noR {
         border-right: 1px solid #d6d6d6;
     }
-    
+
     #item__wrap>div.noB {
         border-bottom: 1px solid #d6d6d6;
     }
+
     #item__wrap>div.black__me {
         // background-color: #000;
         background-image: url(../../img/about1-1.png);
-        background-size: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 */
+        background-size: cover;
+        /* 이미지가 부모 요소에 꽉 차도록 설정 */
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0px;
     }
+
     #item__wrap>div.noB__kr h3 {
         font-family: var(--main-gmark);
         font-weight: bolder;
@@ -591,21 +597,24 @@ body {
             "box9"
             "box16"
             "box16"
-           
+
         ;
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(22, 10vh);
         font-family: 'ChosunNm';
     }
+
     #item__wrap>div.black__me {
         // background-color: #000;
         background-image: url(../../img/about1.jpg);
-        background-size: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 */
+        background-size: cover;
+        /* 이미지가 부모 요소에 꽉 차도록 설정 */
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0px;
     }
+
     body {
         overflow-x: auto;
         /* Enable horizontal scrollbar if needed */
@@ -682,7 +691,7 @@ body {
     }
 
     #item__wrap>div.title .desc3 {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 160%;
     }
 
