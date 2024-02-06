@@ -12,6 +12,7 @@ import Search from './page/Search'
 import Quiz from './page/Quiz'
 import Promptopia from './page/Promptopia'
 import Kickoff from './page/Kickoff'
+import Music from './page/Music'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/gyobok' element={<Gyobok />} />
         <Route path='/youtube' element={<Youtube />} />
         <Route path='/movie' element={<Movie />} />
+        <Route path='/music' element={<Music />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </Main>

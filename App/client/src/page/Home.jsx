@@ -210,6 +210,7 @@ const Home = () => {
     linkClickHandler(".item.i9 .list li:nth-child(1) a", "/youtube");
     linkClickHandler(".item.i9 .list li:nth-child(2) a", "/movie");
     linkClickHandler(".item.i9 .list li:nth-child(3) a", "/promtopia");
+    linkClickHandler(".item.i9 .list li:nth-child(4) a", "/music");
 
     linkClickHandler(".item.i15", "/aboutme");
     linkClickHandler(".item.i16", "/contact");
@@ -308,6 +309,7 @@ const Home = () => {
               1. React와 API를 활용한 YoutubeSite<br />
               2. Vue.js와 API를 활용한 MovieSite<br />
               3. Next.js 활용한 Promptopia<br />
+              4. React와 API를 활용한 MusicPlay<br />
             </p>
             <div className="list">
               <ul>
@@ -319,6 +321,9 @@ const Home = () => {
                 </li>
                 <li>
                   <a href="/promptopia">3</a>
+                </li>
+                <li>
+                  <a href="/music">4</a>
                 </li>
               </ul>
             </div>

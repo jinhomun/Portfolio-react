@@ -203,8 +203,9 @@ const Promptopia = () => {
     linkClickHandler(".item.i1 li:nth-child(1) a", "/youtube");
     linkClickHandler(".item.i1 li:nth-child(2) a", "/movie");
     linkClickHandler(".item.i1 li:nth-child(3) a", "/promptopia");
+    linkClickHandler(".item.i1 li:nth-child(4) a", "/music");
     linkClickHandler(".item.i3", "/");
-    linkClickHandler(".item.i4", "/youtube");
+    linkClickHandler(".item.i4", "/music");
     linkClickHandler(".item.i6", "/contact");
     linkClickHandler(
       ".item.i15",
@@ -227,6 +228,7 @@ const Promptopia = () => {
               <li><a href="/youtube">1</a></li>
               <li><a href="/movie">2</a></li>
               <li className="active"><a href="/promptopia">3</a></li>
+              <li><a href="/music">4</a></li>
             </ul>
             <h2 className="long">Promptopia</h2>
           </div>
@@ -243,9 +245,9 @@ const Promptopia = () => {
           </div>
           <div className="item__bg"></div>
         </div>
-        <div className="item i4 noR home" href="/youtube">
+        <div className="item i4 noR home" href="/music">
           <div className="item__inner">
-            <p>Youtube</p>
+            <p>Music.p</p>
             <img src={arrow} alt="화살표"></img>
           </div>
           <div className="item__bg"></div>
