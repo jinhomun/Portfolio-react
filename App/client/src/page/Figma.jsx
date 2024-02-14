@@ -1,21 +1,21 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 
-import imgMusic1 from "../assets/img/music01.png";
-import imgMusic2 from "../assets/img/music02.png";
-import imgMusic3 from "../assets/img/music03.png";
+import imgFigma1 from "../assets/img/figma01.png";
+import imgFigma2 from "../assets/img/figma02.png";
+
 import arrow from "../assets/img/Arrow11.svg";
 
 import SliderScript from "../assets/script/SliderScript";
 
 
-import Musicdesc from "../components/desc/Musicdesc";
 
-const Music = () => {
+import Figmadesc from "../components/desc/Figmadesc";
+
+const Figma = () => {
   useEffect(() => {
     gsap.set(".item.i1 .item__inner", {
       opacity: 0,
-      y: 30,
     });
     gsap.set(".item.i7 .item__inner", {
       opacity: 0,
@@ -207,7 +207,7 @@ const Music = () => {
     linkClickHandler(".item.i1 li:nth-child(4) a", "/music");
     linkClickHandler(".item.i1 li:nth-child(5) a", "/figma");
     linkClickHandler(".item.i3", "/");
-    linkClickHandler(".item.i4", "/figma");
+    linkClickHandler(".item.i4", "/youtube");
     linkClickHandler(".item.i6", "/contact");
     linkClickHandler(
       ".item.i15",
@@ -230,10 +230,10 @@ const Music = () => {
               <li><a href="/youtube">1</a></li>
               <li><a href="/movie">2</a></li>
               <li><a href="/promptopia">3</a></li>
-              <li className="active"><a href="/music">4</a></li>
-              <li><a href="/figma">5</a></li>
+              <li><a href="/music">4</a></li>
+              <li className="active"><a href="/figma">5</a></li>
             </ul>
-            <h2 className="long">MusicPlay</h2>
+            <h2 className="long">Figma Pro</h2>
           </div>
           <div className="item__bg"></div>
         </div>
@@ -248,9 +248,9 @@ const Music = () => {
           </div>
           <div className="item__bg"></div>
         </div>
-        <div className="item i4 noR home" href="/figma">
+        <div className="item i4 noR home" href="/youtube">
           <div className="item__inner">
-            <p>Figma</p>
+            <p>Youtube</p>
             <img src={arrow} alt="화살표"></img>
           </div>
           <div className="item__bg"></div>
@@ -259,7 +259,7 @@ const Music = () => {
           <div className="item__inner">
             <h3>skill</h3>
             <p className="desc">
-              MusicPlay에서 React와 RapidApi, tailwindcss을 활용
+              Figma에서 Next.js와 fabric.js을 활용
             </p>
           </div>
           <div className="item__bg"></div>
@@ -276,14 +276,14 @@ const Music = () => {
             <SliderScript />
             <div className="sliderWrap">
               <div className="slider">
-                <img src={imgMusic1} alt="Music1" />
+                <img src={imgFigma1} alt="Figma1" />
               </div>
               <div className="slider">
-                <img src={imgMusic2} alt="Music2" />
+                <img src={imgFigma2} alt="Figma2" />
               </div>
-              <div className="slider">
+              {/* <div className="slider">
                 <img src={imgMusic3} alt="Music3" />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="item__bg"></div>
@@ -293,7 +293,7 @@ const Music = () => {
           <div className="item__bg"></div>
         </div>
         <div className="item i9 black">
-          <Musicdesc />
+          <Figmadesc />
           <div className="item__bg"></div>
         </div>
 
@@ -319,7 +319,7 @@ const Music = () => {
         </div>
         <div
           className="item i15 noB title"
-          href="https://github.com/jinhomun/project_music_player"
+          href="https://github.com/jinhomun/Figma_Clone"
         >
           <div className="item__inner">
             <h3>code view</h3>
@@ -332,11 +332,11 @@ const Music = () => {
         </div>
         <div
           className="item i16 noR noB title"
-          href="https://project-music-player-moon.netlify.app/"
+          href="https://figma-clone-green.vercel.app/"
         >
           <div className="item__inner">
             <h3>site view</h3>
-            <p className="desc">netlify에 올린 사이트를 직접 볼 수 있습니다.</p>
+            <p className="desc">vercel에 올린 사이트를 직접 볼 수 있습니다.</p>
           </div>
 
           <div className="item__bg"></div>
@@ -346,4 +346,4 @@ const Music = () => {
   );
 };
 
-export default Music;
+export default Figma;

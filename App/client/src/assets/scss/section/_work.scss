@@ -256,6 +256,19 @@ body {
   margin-left: 5px;
 }
 
+#item__wrap2>div.title li:nth-child(5) a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  text-align: center;
+  line-height: 38px;
+  font-size: 20px;
+  display: inline-block;
+  font-family: var(--main-gmark);
+  margin-left: 5px;
+}
+
 #item__wrap2>div.title li.active a {
   background-color: #000;
   color: #fff;

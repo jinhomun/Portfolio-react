@@ -211,6 +211,8 @@ const Home = () => {
     linkClickHandler(".item.i9 .list li:nth-child(2) a", "/movie");
     linkClickHandler(".item.i9 .list li:nth-child(3) a", "/promtopia");
     linkClickHandler(".item.i9 .list li:nth-child(4) a", "/music");
+    linkClickHandler(".item.i9 .list li:nth-child(5) a", "/figma");
+
 
     linkClickHandler(".item.i15", "/aboutme");
     linkClickHandler(".item.i16", "/contact");
@@ -310,6 +312,7 @@ const Home = () => {
               2. Vue.js와 API를 활용한 MovieSite<br />
               3. Next.js 활용한 Promptopia<br />
               4. React와 API를 활용한 MusicPlay<br />
+              5. Next.js와 fabric.js를 활용한 Figma<br />
             </p>
             <div className="list">
               <ul>
@@ -324,6 +327,9 @@ const Home = () => {
                 </li>
                 <li>
                   <a href="/music">4</a>
+                </li>
+                <li>
+                  <a href="/figma">5</a>
                 </li>
               </ul>
             </div>

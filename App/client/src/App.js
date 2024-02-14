@@ -13,6 +13,7 @@ import Quiz from './page/Quiz'
 import Promptopia from './page/Promptopia'
 import Kickoff from './page/Kickoff'
 import Music from './page/Music'
+import Figma from './page/Figma'
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/youtube' element={<Youtube />} />
         <Route path='/movie' element={<Movie />} />
         <Route path='/music' element={<Music />} />
+        <Route path='/figma' element={<Figma />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </Main>

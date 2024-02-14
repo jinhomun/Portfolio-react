@@ -275,6 +275,22 @@ body {
   margin-left: 5px;
 }
 
+#item__wrap .list ul li:nth-child(5) a {
+  display: inline-block;
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  border-radius: 50%;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff;
+  margin-left: 5px;
+}
+
 #item__wrap .list ul li a:hover {
   background-color: #fff;
   color: #000;
@@ -332,7 +348,7 @@ body {
   }
 
   #item__wrap>div.title .desc2 {
-    font-size: 15px;
+    font-size: 14.5px;
     line-height: 160%;
   }
 
@@ -465,12 +481,12 @@ body {
   }
 
   #item__wrap>div.title .desc2 {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 160%;
   }
 
   #item__wrap>div.title p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 160%;
   }
 
@@ -712,8 +728,8 @@ body {
   }
 
   #item__wrap>div.title .desc2 {
-    font-size: 15px;
-    line-height: 160%;
+    font-size: 13px;
+    line-height: 120%;
   }
 
   #item__wrap>div.title p {
@@ -804,7 +820,7 @@ body {
   }
 
   #item__wrap>div.title .desc2 {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 160%;
   }
 

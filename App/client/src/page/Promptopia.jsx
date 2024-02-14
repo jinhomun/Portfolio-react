@@ -204,6 +204,7 @@ const Promptopia = () => {
     linkClickHandler(".item.i1 li:nth-child(2) a", "/movie");
     linkClickHandler(".item.i1 li:nth-child(3) a", "/promptopia");
     linkClickHandler(".item.i1 li:nth-child(4) a", "/music");
+    linkClickHandler(".item.i1 li:nth-child(5) a", "/figma");
     linkClickHandler(".item.i3", "/");
     linkClickHandler(".item.i4", "/music");
     linkClickHandler(".item.i6", "/contact");
@@ -229,6 +230,7 @@ const Promptopia = () => {
               <li><a href="/movie">2</a></li>
               <li className="active"><a href="/promptopia">3</a></li>
               <li><a href="/music">4</a></li>
+              <li><a href="/figma">5</a></li>
             </ul>
             <h2 className="long">Promptopia</h2>
           </div>
